@@ -6,16 +6,32 @@
     "Career Games Played": 84,
     "Session": {
       "Spring 2021": {
-        "PPM": [1.45],
-        "PPM Overpost": [0],
-        "PPM Equalpost": [1.67],
-        "PPM Underpost": [1]
+        "PPM": [
+          1.45
+        ],
+        "PPM Overpost": [
+          0
+        ],
+        "PPM Equalpost": [
+          1.67
+        ],
+        "PPM Underpost": [
+          1
+        ]
       },
       "Summer 2021": {
-        "PPM": [1.75],
-        "PPM Overpost": [0],
-        "PPM Equalpost": [1.8],
-        "PPM Underpost": [3]
+        "PPM": [
+          1.75
+        ],
+        "PPM Overpost": [
+          0
+        ],
+        "PPM Equalpost": [
+          1.8
+        ],
+        "PPM Underpost": [
+          2.5
+        ]
       }
     }
   },
@@ -26,16 +42,30 @@
     "Career Games Played": 58,
     "Session": {
       "Spring 2021": {
-        "PPM": [0.71],
-        "PPM Overpost": [0.67],
-        "PPM Equalpost": [0.75],
+        "PPM": [
+          0.71
+        ],
+        "PPM Overpost": [
+          0.67
+        ],
+        "PPM Equalpost": [
+          0.75
+        ],
         "PPM Underpost": []
       },
       "Summer 2021": {
-        "PPM": [0.67],
-        "PPM Overpost": [1],
-        "PPM Equalpost": [0.5],
-        "PPM Underpost": [0.67]
+        "PPM": [
+          0.67
+        ],
+        "PPM Overpost": [
+          1
+        ],
+        "PPM Equalpost": [
+          0.5
+        ],
+        "PPM Underpost": [
+          0.67
+        ]
       }
     }
   },
@@ -46,16 +76,32 @@
     "Career Games Played": 58,
     "Session": {
       "Spring 2021": {
-        "PPM": [1],
-        "PPM Overpost": [0.5],
-        "PPM Equalpost": [1.2],
-        "PPM Underpost": [1]
+        "PPM": [
+          1
+        ],
+        "PPM Overpost": [
+          0.5
+        ],
+        "PPM Equalpost": [
+          1.2
+        ],
+        "PPM Underpost": [
+          1
+        ]
       },
       "Summer 2021": {
-        "PPM": [0.71],
-        "PPM Overpost": [1.33],
-        "PPM Equalpost": [0.33],
-        "PPM Underpost": [0]
+        "PPM": [
+          0.71
+        ],
+        "PPM Overpost": [
+          1.33
+        ],
+        "PPM Equalpost": [
+          0.33
+        ],
+        "PPM Underpost": [
+          0
+        ]
       }
     }
   },
@@ -66,16 +112,32 @@
     "Career Games Played": 56,
     "Session": {
       "Spring 2021": {
-        "PPM": [1.14],
-        "PPM Overpost": [2],
-        "PPM Equalpost": [1.2],
-        "PPM Underpost": [0]
+        "PPM": [
+          1.14
+        ],
+        "PPM Overpost": [
+          2
+        ],
+        "PPM Equalpost": [
+          1.2
+        ],
+        "PPM Underpost": [
+          0
+        ]
       },
       "Summer 2021": {
-        "PPM": [2.33],
-        "PPM Overpost": [2],
-        "PPM Equalpost": [2.75],
-        "PPM Underpost": [2]
+        "PPM": [
+          2.33
+        ],
+        "PPM Overpost": [
+          2
+        ],
+        "PPM Equalpost": [
+          2.75
+        ],
+        "PPM Underpost": [
+          2
+        ]
       }
     }
   },
@@ -86,16 +148,32 @@
     "Career Games Played": 389,
     "Session": {
       "Spring 2021": {
-        "PPM": [1.9],
-        "PPM Overpost": [2.5],
-        "PPM Equalpost": [1.4],
-        "PPM Underpost": [2.33]
+        "PPM": [
+          1.9
+        ],
+        "PPM Overpost": [
+          2.5
+        ],
+        "PPM Equalpost": [
+          1.4
+        ],
+        "PPM Underpost": [
+          2.33
+        ]
       },
       "Summer 2021": {
-        "PPM": [1.78],
-        "PPM Overpost": [2],
-        "PPM Equalpost": [1.33],
-        "PPM Underpost": [2]
+        "PPM": [
+          1.78
+        ],
+        "PPM Overpost": [
+          2
+        ],
+        "PPM Equalpost": [
+          1.33
+        ],
+        "PPM Underpost": [
+          2
+        ]
       }
     }
   },
@@ -106,16 +184,30 @@
     "Career Games Played": 125,
     "Session": {
       "Spring 2021": {
-        "PPM": [1],
-        "PPM Overpost": [0],
-        "PPM Equalpost": [1.2],
-        "PPM Underpost": [1]
+        "PPM": [
+          1
+        ],
+        "PPM Overpost": [
+          0
+        ],
+        "PPM Equalpost": [
+          1.2
+        ],
+        "PPM Underpost": [
+          1
+        ]
       },
       "Summer 2021": {
-        "PPM": [1.17],
+        "PPM": [
+          1.17
+        ],
         "PPM Overpost": [],
-        "PPM Equalpost": [1.4],
-        "PPM Underpost": [0]
+        "PPM Equalpost": [
+          1.4
+        ],
+        "PPM Underpost": [
+          0
+        ]
       }
     }
   },
@@ -126,15 +218,27 @@
     "Career Games Played": 159,
     "Session": {
       "Spring 2021": {
-        "PPM": [1.44],
-        "PPM Overpost": [1.75],
-        "PPM Equalpost": [1.2],
+        "PPM": [
+          1.44
+        ],
+        "PPM Overpost": [
+          1.75
+        ],
+        "PPM Equalpost": [
+          1.2
+        ],
         "PPM Underpost": []
       },
       "Summer 2021": {
-        "PPM": [2.1],
-        "PPM Overpost": [1.67],
-        "PPM Equalpost": [2.29],
+        "PPM": [
+          2.1
+        ],
+        "PPM Overpost": [
+          1.67
+        ],
+        "PPM Equalpost": [
+          2.29
+        ],
         "PPM Underpost": []
       }
     }
@@ -146,16 +250,28 @@
     "Career Games Played": 60,
     "Session": {
       "Spring 2021": {
-        "PPM": [1.67],
-        "PPM Overpost": [3],
-        "PPM Equalpost": [1.29],
+        "PPM": [
+          1.67
+        ],
+        "PPM Overpost": [
+          3
+        ],
+        "PPM Equalpost": [
+          1.29
+        ],
         "PPM Underpost": []
       },
       "Summer 2021": {
-        "PPM": [1],
+        "PPM": [
+          1
+        ],
         "PPM Overpost": [],
-        "PPM Equalpost": [1],
-        "PPM Underpost": [1]
+        "PPM Equalpost": [
+          1
+        ],
+        "PPM Underpost": [
+          1
+        ]
       }
     }
   }
