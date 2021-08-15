@@ -1,9 +1,9 @@
-Player_Name,Skill_Level,PPM,Career_Win_Chance,Spring_2021_PPM,Spring_2021_PPM_Overpost,Spring_2021_PPM_Equalpost,Spring_2021_PPM_Underpost,PPM_Overpost,PPM_Equalpost,PPM_Underpost
-Wes Young,4,1.75,0.4643,1.45,0,1.67,1,0,1.8,3
-Brian Knapp,6,0.67,0.3966,0.71,0.67,0.75,,1,0.5,0.67
-John Wigart,5,0.71,0.569,1,0.5,1.2,1,1.33,0.33,0
-Brian Lillard,5,2.33,0.5714,1.14,2,1.2,0,2,2.75,2
-Clint McKoy,5,1.78,0.509,1.9,2.5,1.4,2.33,2,1.33,2
-Rob Freimuth,3,1.17,0.504,1,0,1.2,1,,1.4,0
-Kim Quan,5,2.1,0.566,1.44,1.75,1.2,,1.67,2.29,
-Scott Berry,4,1,0.5333,1.67,3,1.29,,,1,1
+"Player_Name","Skill_Level","Career_Win_Chance","Session"
+"Wes Young",4,0.4643,"{\"Spring_2021\":{\"PPM\":1.45,\"PPM_Overpost\":0,\"PPM_Equalpost\":1.67,\"PPM_Underpost\":1},\"Summer_2021\":{\"PPM\":1.75,\"PPM_Overpost\":0,\"PPM_Equalpost\":1.8,\"PPM_Underpost\":3}}"
+"Brian Knapp",6,0.3966,"{\"Spring_2021\":{\"PPM\":0.71,\"PPM_Overpost\":0.67,\"PPM_Equalpost\":0.75,\"PPM_Underpost\":\"\"},\"Summer_2021\":{\"PPM\":0.67,\"PPM_Overpost\":1,\"PPM_Equalpost\":0.5,\"PPM_Underpost\":0.67}}"
+"John Wigart",5,0.569,"{\"Spring_2021\":{\"PPM\":1,\"PPM_Overpost\":0.5,\"PPM_Equalpost\":1.2,\"PPM_Underpost\":1},\"Summer_2021\":{\"PPM\":0.71,\"PPM_Overpost\":1.33,\"PPM_Equalpost\":0.33,\"PPM_Underpost\":0}}"
+"Brian Lillard",5,0.5714,"{\"Spring_2021\":{\"PPM\":1.14,\"PPM_Overpost\":2,\"PPM_Equalpost\":1.2,\"PPM_Underpost\":0},\"Summer_2021\":{\"PPM\":2.33,\"PPM_Overpost\":2,\"PPM_Equalpost\":2.75,\"PPM_Underpost\":2}}"
+"Clint McKoy",5,0.509,"{\"Spring_2021\":{\"PPM\":1.9,\"PPM_Overpost\":2.5,\"PPM_Equalpost\":1.4,\"PPM_Underpost\":2.33},\"Summer_2021\":{\"PPM\":1.78,\"PPM_Overpost\":2,\"PPM_Equalpost\":1.33,\"PPM_Underpost\":2}}"
+"Rob Freimuth",3,0.504,"{\"Spring_2021\":{\"PPM\":1,\"PPM_Overpost\":0,\"PPM_Equalpost\":1.2,\"PPM_Underpost\":1},\"Summer_2021\":{\"PPM\":1.17,\"PPM_Overpost\":\"\",\"PPM_Equalpost\":1.4,\"PPM_Underpost\":0}}"
+"Kim Quan",5,0.566,"{\"Spring_2021\":{\"PPM\":1.44,\"PPM_Overpost\":1.75,\"PPM_Equalpost\":1.2,\"PPM_Underpost\":\"\"},\"Summer_2021\":{\"PPM\":2.1,\"PPM_Overpost\":1.67,\"PPM_Equalpost\":2.29,\"PPM_Underpost\":\"\"}}"
+"Scott Berry",4,0.5333,"{\"Spring_2021\":{\"PPM\":1.67,\"PPM_Overpost\":3,\"PPM_Equalpost\":1.29,\"PPM_Underpost\":\"\"},\"Summer_2021\":{\"PPM\":1,\"PPM_Overpost\":\"\",\"PPM_Equalpost\":1,\"PPM_Underpost\":1}}"
