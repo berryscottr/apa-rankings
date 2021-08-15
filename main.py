@@ -1,3 +1,5 @@
+import json
+
 import pandas as pd
 from sklearn.linear_model import LinearRegression
 
@@ -48,8 +50,16 @@ def build_table(data, preds):
 
 
 def main():
-    player_data = pd.read_csv("data/playerData.csv", index_col=0, na_values='?').astype(float)
-    player_data = player_data.fillna(pd.Series.mean(player_data))
+    # player_data = pd.read_csv("data/playerData.json", index_col=0, na_values='?').astype(float)
+    with open("data/playerData.json") as data_file:
+        data = json.load(data_file)
+    player_data = pd.json_normalize(data).set_index("Player Name")
+    for index, row in player_data.iterrows():
+        for item in row.iteritems():
+            if not item[1]:
+                row_mean = pd.DataFrame(player_data[item[0]].values.tolist()).mean(1)
+                row_mean = pd.Series.mean(row_mean)
+                player_data[item[0]][index] = [round(row_mean, 2)]
     prediction = pd.DataFrame(predict(
         player_data[["Last_Season_PPM", "Career_Win_Chance"]], player_data["PPM"])[1], columns=["Pred PPM"],
                               index=player_data.index.values)
