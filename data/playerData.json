@@ -5,16 +5,16 @@
     "Career_Win_Chance": 0.4643,
     "Session": {
       "Spring_2021": {
-        "PPM": 1.45,
-        "PPM_Overpost": 0,
-        "PPM_Equalpost": 1.67,
-        "PPM_Underpost": 1
+        "PPM": [1.45],
+        "PPM_Overpost": [0],
+        "PPM_Equalpost": [1.67],
+        "PPM_Underpost": [1]
       },
       "Summer_2021": {
-        "PPM": 1.75,
-        "PPM_Overpost": 0,
-        "PPM_Equalpost": 1.8,
-        "PPM_Underpost": 3
+        "PPM": [1.75],
+        "PPM_Overpost": [0],
+        "PPM_Equalpost": [1.8],
+        "PPM_Underpost": [3]
       }
     }
   },
@@ -24,16 +24,16 @@
     "Career_Win_Chance": 0.3966,
     "Session": {
       "Spring_2021": {
-        "PPM": 0.71,
-        "PPM_Overpost": 0.67,
-        "PPM_Equalpost": 0.75,
-        "PPM_Underpost": ""
+        "PPM": [0.71],
+        "PPM_Overpost": [0.67],
+        "PPM_Equalpost": [0.75],
+        "PPM_Underpost": []
       },
       "Summer_2021": {
-        "PPM": 0.67,
-        "PPM_Overpost": 1,
-        "PPM_Equalpost": 0.5,
-        "PPM_Underpost": 0.67
+        "PPM": [0.67],
+        "PPM_Overpost": [1],
+        "PPM_Equalpost": [0.5],
+        "PPM_Underpost": [0.67]
       }
     }
   },
@@ -43,16 +43,16 @@
     "Career_Win_Chance": 0.569,
     "Session": {
       "Spring_2021": {
-        "PPM": 1,
-        "PPM_Overpost": 0.5,
-        "PPM_Equalpost": 1.2,
-        "PPM_Underpost": 1
+        "PPM": [1],
+        "PPM_Overpost": [0.5],
+        "PPM_Equalpost": [1.2],
+        "PPM_Underpost": [1]
       },
       "Summer_2021": {
-        "PPM": 0.71,
-        "PPM_Overpost": 1.33,
-        "PPM_Equalpost": 0.33,
-        "PPM_Underpost": 0
+        "PPM": [0.71],
+        "PPM_Overpost": [1.33],
+        "PPM_Equalpost": [0.33],
+        "PPM_Underpost": [0]
       }
     }
   },
@@ -62,16 +62,16 @@
     "Career_Win_Chance": 0.5714,
     "Session": {
       "Spring_2021": {
-        "PPM": 1.14,
-        "PPM_Overpost": 2,
-        "PPM_Equalpost": 1.2,
-        "PPM_Underpost": 0
+        "PPM": [1.14],
+        "PPM_Overpost": [2],
+        "PPM_Equalpost": [1.2],
+        "PPM_Underpost": [0]
       },
       "Summer_2021": {
-        "PPM": 2.33,
-        "PPM_Overpost": 2,
-        "PPM_Equalpost": 2.75,
-        "PPM_Underpost": 2
+        "PPM": [2.33],
+        "PPM_Overpost": [2],
+        "PPM_Equalpost": [2.75],
+        "PPM_Underpost": [2]
       }
     }
   },
@@ -81,16 +81,16 @@
     "Career_Win_Chance": 0.509,
     "Session": {
       "Spring_2021": {
-        "PPM": 1.9,
-        "PPM_Overpost": 2.5,
-        "PPM_Equalpost": 1.4,
-        "PPM_Underpost": 2.33
+        "PPM": [1.9],
+        "PPM_Overpost": [2.5],
+        "PPM_Equalpost": [1.4],
+        "PPM_Underpost": [2.33]
       },
       "Summer_2021": {
-        "PPM": 1.78,
-        "PPM_Overpost": 2,
-        "PPM_Equalpost": 1.33,
-        "PPM_Underpost": 2
+        "PPM": [1.78],
+        "PPM_Overpost": [2],
+        "PPM_Equalpost": [1.33],
+        "PPM_Underpost": [2]
       }
     }
   },
@@ -100,16 +100,16 @@
     "Career_Win_Chance": 0.504,
     "Session": {
       "Spring_2021": {
-        "PPM": 1,
-        "PPM_Overpost": 0,
-        "PPM_Equalpost": 1.2,
-        "PPM_Underpost": 1
+        "PPM": [1],
+        "PPM_Overpost": [0],
+        "PPM_Equalpost": [1.2],
+        "PPM_Underpost": [1]
       },
       "Summer_2021": {
-        "PPM": 1.17,
-        "PPM_Overpost": "",
-        "PPM_Equalpost": 1.4,
-        "PPM_Underpost": 0
+        "PPM": [1.17],
+        "PPM_Overpost": [],
+        "PPM_Equalpost": [1.4],
+        "PPM_Underpost": [0]
       }
     }
   },
@@ -119,16 +119,16 @@
     "Career_Win_Chance": 0.566,
     "Session": {
       "Spring_2021": {
-        "PPM": 1.44,
-        "PPM_Overpost": 1.75,
-        "PPM_Equalpost": 1.2,
-        "PPM_Underpost": ""
+        "PPM": [1.44],
+        "PPM_Overpost": [1.75],
+        "PPM_Equalpost": [1.2],
+        "PPM_Underpost": []
       },
       "Summer_2021": {
-        "PPM": 2.1,
-        "PPM_Overpost": 1.67,
-        "PPM_Equalpost": 2.29,
-        "PPM_Underpost": ""
+        "PPM": [2.1],
+        "PPM_Overpost": [1.67],
+        "PPM_Equalpost": [2.29],
+        "PPM_Underpost": []
       }
     }
   },
@@ -138,16 +138,16 @@
     "Career_Win_Chance": 0.5333,
     "Session": {
       "Spring_2021": {
-        "PPM": 1.67,
-        "PPM_Overpost": 3,
-        "PPM_Equalpost": 1.29,
-        "PPM_Underpost": ""
+        "PPM": [1.67],
+        "PPM_Overpost": [3],
+        "PPM_Equalpost": [1.29],
+        "PPM_Underpost": []
       },
       "Summer_2021": {
-        "PPM": 1,
-        "PPM_Overpost": "",
-        "PPM_Equalpost": 1,
-        "PPM_Underpost": 1
+        "PPM": [1],
+        "PPM_Overpost": [],
+        "PPM_Equalpost": [1],
+        "PPM_Underpost": [1]
       }
     }
   }
