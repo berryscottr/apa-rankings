@@ -1,153 +1,153 @@
 [
   {
-    "Player_Name": "Wes Young",
-    "Skill_Level": 4,
-    "Career_Win_Chance": 0.4643,
+    "Player Name": "Wes Young",
+    "Skill Level": 4,
+    "Career Win Chance": 0.4643,
     "Session": {
-      "Spring_2021": {
+      "Spring 2021": {
         "PPM": [1.45],
-        "PPM_Overpost": [0],
-        "PPM_Equalpost": [1.67],
-        "PPM_Underpost": [1]
+        "PPM Overpost": [0],
+        "PPM Equalpost": [1.67],
+        "PPM Underpost": [1]
       },
-      "Summer_2021": {
+      "Summer 2021": {
         "PPM": [1.75],
-        "PPM_Overpost": [0],
-        "PPM_Equalpost": [1.8],
-        "PPM_Underpost": [3]
+        "PPM Overpost": [0],
+        "PPM Equalpost": [1.8],
+        "PPM Underpost": [3]
       }
     }
   },
   {
-    "Player_Name": "Brian Knapp",
-    "Skill_Level": 6,
-    "Career_Win_Chance": 0.3966,
+    "Player Name": "Brian Knapp",
+    "Skill Level": 6,
+    "Career Win Chance": 0.3966,
     "Session": {
-      "Spring_2021": {
+      "Spring 2021": {
         "PPM": [0.71],
-        "PPM_Overpost": [0.67],
-        "PPM_Equalpost": [0.75],
-        "PPM_Underpost": []
+        "PPM Overpost": [0.67],
+        "PPM Equalpost": [0.75],
+        "PPM Underpost": []
       },
-      "Summer_2021": {
+      "Summer 2021": {
         "PPM": [0.67],
-        "PPM_Overpost": [1],
-        "PPM_Equalpost": [0.5],
-        "PPM_Underpost": [0.67]
+        "PPM Overpost": [1],
+        "PPM Equalpost": [0.5],
+        "PPM Underpost": [0.67]
       }
     }
   },
   {
-    "Player_Name": "John Wigart",
-    "Skill_Level": 5,
-    "Career_Win_Chance": 0.569,
+    "Player Name": "John Wigart",
+    "Skill Level": 5,
+    "Career Win Chance": 0.569,
     "Session": {
-      "Spring_2021": {
+      "Spring 2021": {
         "PPM": [1],
-        "PPM_Overpost": [0.5],
-        "PPM_Equalpost": [1.2],
-        "PPM_Underpost": [1]
+        "PPM Overpost": [0.5],
+        "PPM Equalpost": [1.2],
+        "PPM Underpost": [1]
       },
-      "Summer_2021": {
+      "Summer 2021": {
         "PPM": [0.71],
-        "PPM_Overpost": [1.33],
-        "PPM_Equalpost": [0.33],
-        "PPM_Underpost": [0]
+        "PPM Overpost": [1.33],
+        "PPM Equalpost": [0.33],
+        "PPM Underpost": [0]
       }
     }
   },
   {
-    "Player_Name": "Brian Lillard",
-    "Skill_Level": 5,
-    "Career_Win_Chance": 0.5714,
+    "Player Name": "Brian Lillard",
+    "Skill Level": 5,
+    "Career Win Chance": 0.5714,
     "Session": {
-      "Spring_2021": {
+      "Spring 2021": {
         "PPM": [1.14],
-        "PPM_Overpost": [2],
-        "PPM_Equalpost": [1.2],
-        "PPM_Underpost": [0]
+        "PPM Overpost": [2],
+        "PPM Equalpost": [1.2],
+        "PPM Underpost": [0]
       },
-      "Summer_2021": {
+      "Summer 2021": {
         "PPM": [2.33],
-        "PPM_Overpost": [2],
-        "PPM_Equalpost": [2.75],
-        "PPM_Underpost": [2]
+        "PPM Overpost": [2],
+        "PPM Equalpost": [2.75],
+        "PPM Underpost": [2]
       }
     }
   },
   {
-    "Player_Name": "Clint McKoy",
-    "Skill_Level": 5,
-    "Career_Win_Chance": 0.509,
+    "Player Name": "Clint McKoy",
+    "Skill Level": 5,
+    "Career Win Chance": 0.509,
     "Session": {
-      "Spring_2021": {
+      "Spring 2021": {
         "PPM": [1.9],
-        "PPM_Overpost": [2.5],
-        "PPM_Equalpost": [1.4],
-        "PPM_Underpost": [2.33]
+        "PPM Overpost": [2.5],
+        "PPM Equalpost": [1.4],
+        "PPM Underpost": [2.33]
       },
-      "Summer_2021": {
+      "Summer 2021": {
         "PPM": [1.78],
-        "PPM_Overpost": [2],
-        "PPM_Equalpost": [1.33],
-        "PPM_Underpost": [2]
+        "PPM Overpost": [2],
+        "PPM Equalpost": [1.33],
+        "PPM Underpost": [2]
       }
     }
   },
   {
-    "Player_Name": "Rob Freimuth",
-    "Skill_Level": 3,
-    "Career_Win_Chance": 0.504,
+    "Player Name": "Rob Freimuth",
+    "Skill Level": 3,
+    "Career Win Chance": 0.504,
     "Session": {
-      "Spring_2021": {
+      "Spring 2021": {
         "PPM": [1],
-        "PPM_Overpost": [0],
-        "PPM_Equalpost": [1.2],
-        "PPM_Underpost": [1]
+        "PPM Overpost": [0],
+        "PPM Equalpost": [1.2],
+        "PPM Underpost": [1]
       },
-      "Summer_2021": {
+      "Summer 2021": {
         "PPM": [1.17],
-        "PPM_Overpost": [],
-        "PPM_Equalpost": [1.4],
-        "PPM_Underpost": [0]
+        "PPM Overpost": [],
+        "PPM Equalpost": [1.4],
+        "PPM Underpost": [0]
       }
     }
   },
   {
-    "Player_Name": "Kim Quan",
-    "Skill_Level": 5,
-    "Career_Win_Chance": 0.566,
+    "Player Name": "Kim Quan",
+    "Skill Level": 5,
+    "Career Win Chance": 0.566,
     "Session": {
-      "Spring_2021": {
+      "Spring 2021": {
         "PPM": [1.44],
-        "PPM_Overpost": [1.75],
-        "PPM_Equalpost": [1.2],
-        "PPM_Underpost": []
+        "PPM Overpost": [1.75],
+        "PPM Equalpost": [1.2],
+        "PPM Underpost": []
       },
-      "Summer_2021": {
+      "Summer 2021": {
         "PPM": [2.1],
-        "PPM_Overpost": [1.67],
-        "PPM_Equalpost": [2.29],
-        "PPM_Underpost": []
+        "PPM Overpost": [1.67],
+        "PPM Equalpost": [2.29],
+        "PPM Underpost": []
       }
     }
   },
   {
-    "Player_Name": "Scott Berry",
-    "Skill_Level": 4,
-    "Career_Win_Chance": 0.5333,
+    "Player Name": "Scott Berry",
+    "Skill Level": 4,
+    "Career Win Chance": 0.5333,
     "Session": {
-      "Spring_2021": {
+      "Spring 2021": {
         "PPM": [1.67],
-        "PPM_Overpost": [3],
-        "PPM_Equalpost": [1.29],
-        "PPM_Underpost": []
+        "PPM Overpost": [3],
+        "PPM Equalpost": [1.29],
+        "PPM Underpost": []
       },
-      "Summer_2021": {
+      "Summer 2021": {
         "PPM": [1],
-        "PPM_Overpost": [],
-        "PPM_Equalpost": [1],
-        "PPM_Underpost": [1]
+        "PPM Overpost": [],
+        "PPM Equalpost": [1],
+        "PPM Underpost": [1]
       }
     }
   }
