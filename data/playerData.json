@@ -3,6 +3,7 @@
     "Player Name": "Wes Young",
     "Skill Level": 4,
     "Career Win Chance": 0.4643,
+    "Career Games Played": 84,
     "Session": {
       "Spring 2021": {
         "PPM": [1.45],
@@ -22,6 +23,7 @@
     "Player Name": "Brian Knapp",
     "Skill Level": 6,
     "Career Win Chance": 0.3966,
+    "Career Games Played": 58,
     "Session": {
       "Spring 2021": {
         "PPM": [0.71],
@@ -41,6 +43,7 @@
     "Player Name": "John Wigart",
     "Skill Level": 5,
     "Career Win Chance": 0.569,
+    "Career Games Played": 58,
     "Session": {
       "Spring 2021": {
         "PPM": [1],
@@ -60,6 +63,7 @@
     "Player Name": "Brian Lillard",
     "Skill Level": 5,
     "Career Win Chance": 0.5714,
+    "Career Games Played": 56,
     "Session": {
       "Spring 2021": {
         "PPM": [1.14],
@@ -79,6 +83,7 @@
     "Player Name": "Clint McKoy",
     "Skill Level": 5,
     "Career Win Chance": 0.509,
+    "Career Games Played": 389,
     "Session": {
       "Spring 2021": {
         "PPM": [1.9],
@@ -98,6 +103,7 @@
     "Player Name": "Rob Freimuth",
     "Skill Level": 3,
     "Career Win Chance": 0.504,
+    "Career Games Played": 125,
     "Session": {
       "Spring 2021": {
         "PPM": [1],
@@ -117,6 +123,7 @@
     "Player Name": "Kim Quan",
     "Skill Level": 5,
     "Career Win Chance": 0.566,
+    "Career Games Played": 159,
     "Session": {
       "Spring 2021": {
         "PPM": [1.44],
@@ -136,6 +143,7 @@
     "Player Name": "Scott Berry",
     "Skill Level": 4,
     "Career Win Chance": 0.5333,
+    "Career Games Played": 60,
     "Session": {
       "Spring 2021": {
         "PPM": [1.67],

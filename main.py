@@ -57,11 +57,10 @@ def main():
     for index, row in player_data.iterrows():
         for item in row.iteritems():
             if not item[1]:
-                row_mean = pd.DataFrame(player_data[item[0]].values.tolist()).mean(1)
-                row_mean = pd.Series.mean(row_mean)
-                player_data[item[0]][index] = [round(row_mean, 2)]
+                row_mean = [round(pd.Series.mean(pd.DataFrame(player_data[item[0]].values.tolist()).mean(1)), 2)]
+                player_data[item[0]][index] = row_mean
     prediction = pd.DataFrame(predict(
-        player_data[["Last_Season_PPM", "Career_Win_Chance"]], player_data["PPM"])[1], columns=["Pred PPM"],
+        player_data[["Session.Spring 2021.PPM", "Career Win Chance"]], player_data["Summer 2021.PPM"])[1], columns=["Pred PPM"],
                               index=player_data.index.values)
     overpost_prediction = pd.DataFrame(predict(
         player_data[["Last_Season_PPM_Overpost", "Last_Season_PPM", "Career_Win_Chance"]],
