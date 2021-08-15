@@ -1,6 +1,7 @@
 import json
 
 import pandas as pd
+import numpy as np
 from sklearn.linear_model import LinearRegression
 
 
@@ -20,12 +21,8 @@ def predict(independent_vars, dependent_var):
             dependent_var.name, regression_model.intercept_, regression_model.coef_[0], independent_vars.columns[0],
             regression_model.coef_[1], independent_vars.columns[1], regression_model.coef_[2],
             independent_vars.columns[2]))
-    if abs(max(r_squared, adj_r_squared)) <= 1:
-        print("{} model explains {:.2f}% of the match results".format(
-            dependent_var.name, max(r_squared, adj_r_squared) * 100))
-    else:
-        print("{} model is crap. As an underpost, results cannot be predicted. They are too dependent on the "
-              "table-controlling opponent".format(dependent_var.name))
+    print("{} model explains {:.2f}% of the match results".format(
+        dependent_var.name, max(r_squared, adj_r_squared) * 100))
     return model, prediction, adj_r_squared
 
 
@@ -33,7 +30,7 @@ def build_table(data, preds):
     column_list = []
     for opp_skill in range(2, 8):
         column = []
-        team_skill = data["Skill_Level"].values
+        team_skill = data["Skill Level"].values
         for index, skill in enumerate(team_skill):
             if abs(skill - opp_skill) >= 2:
                 column.append("")
@@ -50,30 +47,31 @@ def build_table(data, preds):
 
 
 def main():
-    # player_data = pd.read_csv("data/playerData.json", index_col=0, na_values='?').astype(float)
     with open("data/playerData.json") as data_file:
         data = json.load(data_file)
     player_data = pd.json_normalize(data).set_index("Player Name")
+    data_file.close()
+    # clean data
     for index, row in player_data.iterrows():
         for item in row.iteritems():
             if not item[1]:
                 row_mean = [round(pd.Series.mean(pd.DataFrame(player_data[item[0]].values.tolist()).mean(1)), 2)]
                 player_data[item[0]][index] = row_mean
+    for index, row in player_data.iterrows():
+        for item in row.iteritems():
+            if type(player_data[item[0]][index]) == list:
+                list_mean = np.mean(player_data[item[0]][index])
+                player_data[item[0]][index] = list_mean
     prediction = pd.DataFrame(predict(
-        player_data[["Session.Spring 2021.PPM", "Career Win Chance"]], player_data["Summer 2021.PPM"])[1], columns=["Pred PPM"],
+        player_data[["Session.Spring 2021.PPM", "Career Win Chance"]], player_data["Session.Summer 2021.PPM"])[1], columns=["Pred PPM"],
                               index=player_data.index.values)
     overpost_prediction = pd.DataFrame(predict(
-        player_data[["Last_Season_PPM_Overpost", "Last_Season_PPM", "Career_Win_Chance"]],
-        player_data["PPM_Overpost"])[1], columns=["Over PPM"], index=player_data.index.values)
+        player_data[["Session.Spring 2021.PPM Overpost", "Session.Spring 2021.PPM", "Career Win Chance"]],
+        player_data["Session.Summer 2021.PPM Overpost"])[1], columns=["Over PPM"], index=player_data.index.values)
     equalpost_prediction = pd.DataFrame(predict(
-        player_data[["Last_Season_PPM_Equalpost", "Last_Season_PPM", "Career_Win_Chance"]],
-        player_data["PPM_Equalpost"])[1], columns=["Equal PPM"], index=player_data.index.values)
-    # underpost_prediction = pd.DataFrame(predict(
-    #     player_data[["Last_Season_PPM_Underpost", "Last_Season_PPM", "Career_Win_Chance"]],
-    #     player_data["PPM_Underpost"])[1], columns=["Under PPM"], index=player_data.index.values)
-    print("PPM underpost derived from overpost, equalpost, and overall. This is necessary because as an underpost, "
-          "results cannot be predicted using our own player's data. "
-          "They are too dependent on the table-controlling opponent")
+        player_data[["Session.Spring 2021.PPM Equalpost", "Session.Spring 2021.PPM", "Career Win Chance"]],
+        player_data["Session.Summer 2021.PPM Equalpost"])[1], columns=["Equal PPM"], index=player_data.index.values)
+    # extrapolate underpost
     underpost_prediction = pd.DataFrame(
         prediction.values * 3 - overpost_prediction.values - equalpost_prediction.values, columns=["Under PPM"],
         index=player_data.index.values)
