@@ -1,5 +1,6 @@
 import json
 import pandas as pd
+from shutil import copyfile
 
 
 class PlayerData:
@@ -69,7 +70,9 @@ class PlayerData:
 
 
 def main():
-    player_data = PlayerData("data/playerData.json")
+    filename = "data/playerData.json"
+    copyfile(filename, filename+".bak")
+    player_data = PlayerData(filename)
     player_data.enter_data()
     player_data.update_data()
     player_data.write()
