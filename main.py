@@ -63,8 +63,8 @@ def main():
                 list_mean = np.mean(player_data[item[0]][index])
                 player_data[item[0]][index] = list_mean
     prediction = pd.DataFrame(predict(
-        player_data[["Session.Spring 2021.PPM", "Career Win Chance"]], player_data["Session.Summer 2021.PPM"])[1], columns=["Pred PPM"],
-                              index=player_data.index.values)
+        player_data[["Session.Spring 2021.PPM", "Career Win Chance"]],
+        player_data["Session.Summer 2021.PPM"])[1], columns=["Pred PPM"], index=player_data.index.values)
     overpost_prediction = pd.DataFrame(predict(
         player_data[["Session.Spring 2021.PPM Overpost", "Session.Spring 2021.PPM", "Career Win Chance"]],
         player_data["Session.Summer 2021.PPM Overpost"])[1], columns=["Over PPM"], index=player_data.index.values)
@@ -73,11 +73,10 @@ def main():
         player_data["Session.Summer 2021.PPM Equalpost"])[1], columns=["Equal PPM"], index=player_data.index.values)
     # extrapolate underpost
     underpost_prediction = pd.DataFrame(
-        prediction.values * 3 - overpost_prediction.values - equalpost_prediction.values, columns=["Under PPM"],
-        index=player_data.index.values)
+        prediction.values * 3 - overpost_prediction.values - equalpost_prediction.values,
+        columns=["Under PPM"], index=player_data.index.values)
     predictions = pd.DataFrame(pd.concat(
-        [prediction, overpost_prediction, equalpost_prediction, underpost_prediction],
-        axis=1)).round(2).abs()
+        [prediction, overpost_prediction, equalpost_prediction, underpost_prediction], axis=1)).round(2).abs()
     predictions.to_csv("data/predictions.csv")
     expected_ppm = build_table(player_data, predictions)
     # normalize e_ppm
