@@ -18,6 +18,7 @@ class PlayerData:
         return player_data
 
     def write(self):
+        copyfile(self.filename, self.filename+".bak")
         json_text = json.dumps(str(self.json_data).replace("\'", "\"", -1), indent=4)
         with open(self.filename, "w") as jsonFile:
             jsonFile.write(json_text)
@@ -70,9 +71,7 @@ class PlayerData:
 
 
 def main():
-    filename = "data/playerData.json"
-    copyfile(filename, filename+".bak")
-    player_data = PlayerData(filename)
+    player_data = PlayerData("data/playerData.json")
     player_data.enter_data()
     player_data.update_data()
     player_data.write()
