@@ -1,7 +1,7 @@
 [
   {
     "Player Name": "Wes Young",
-    "Skill Level": 4,
+    "Skill Level": 3,
     "Career Win Chance": 0.4643,
     "Career Games Played": 84,
     "Session": {
@@ -125,7 +125,7 @@
   },
   {
     "Player Name": "Brian Lillard",
-    "Skill Level": 5,
+    "Skill Level": 4,
     "Career Win Chance": 0.5714,
     "Career Games Played": 56,
     "Session": {
@@ -148,10 +148,10 @@
           2.33
         ],
         "PPM Overpost": [
-          2
+          0, 3, 2
         ],
         "PPM Equalpost": [
-          2.75
+          3, 3, 2, 3, 3
         ],
         "PPM Underpost": [
           2
