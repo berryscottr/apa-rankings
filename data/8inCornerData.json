@@ -1,0 +1,290 @@
+[
+  {
+    "Player Name": "Jerry Landrum",
+    "Skill Level": 6,
+    "Career Win Chance": 0.5281,
+    "Career Games Played": 873,
+    "Session": {
+      "Spring 2021": {
+        "PPM": [
+          0.67
+        ],
+        "PPM Overpost": [
+
+        ],
+        "PPM Equalpost": [
+
+        ],
+        "PPM Underpost": [
+
+        ]
+      },
+      "Summer 2021": {
+        "PPM": [
+          1.43
+        ],
+        "PPM Overpost": [
+
+        ],
+        "PPM Equalpost": [
+
+        ],
+        "PPM Underpost": [
+
+        ]
+      }
+    }
+  },
+  {
+    "Player Name": "Chris Taylor",
+    "Skill Level": 6,
+    "Career Win Chance": 0.5627,
+    "Career Games Played": 542,
+    "Session": {
+      "Spring 2021": {
+        "PPM": [
+          1.42
+        ],
+        "PPM Overpost": [
+
+        ],
+        "PPM Equalpost": [
+
+        ],
+        "PPM Underpost": [
+
+        ]
+      },
+      "Summer 2021": {
+        "PPM": [
+          1.25
+        ],
+        "PPM Overpost": [
+
+        ],
+        "PPM Equalpost": [
+
+        ],
+        "PPM Underpost": [
+
+        ]
+      }
+    }
+  },
+  {
+    "Player Name": "Kendra Mercer",
+    "Skill Level": 3,
+    "Career Win Chance": 0.5254,
+    "Career Games Played": 571,
+    "Session": {
+      "Spring 2021": {
+        "PPM": [
+          1.57
+        ],
+        "PPM Overpost": [
+
+        ],
+        "PPM Equalpost": [
+
+        ],
+        "PPM Underpost": [
+
+        ]
+      },
+      "Summer 2021": {
+        "PPM": [
+          1.78
+        ],
+        "PPM Overpost": [
+
+        ],
+        "PPM Equalpost": [
+
+        ],
+        "PPM Underpost": [
+
+        ]
+      }
+    }
+  },
+  {
+    "Player Name": "Anthony Larussa",
+    "Skill Level": 3,
+    "Career Win Chance": 0.5493,
+    "Career Games Played": 71,
+    "Session": {
+      "Spring 2021": {
+        "PPM": [
+          2.10
+        ],
+        "PPM Overpost": [
+
+        ],
+        "PPM Equalpost": [
+
+        ],
+        "PPM Underpost": [
+
+        ]
+      },
+      "Summer 2021": {
+        "PPM": [
+          1
+        ],
+        "PPM Overpost": [
+
+        ],
+        "PPM Equalpost": [
+
+        ],
+        "PPM Underpost": [
+
+        ]
+      }
+    }
+  },
+  {
+    "Player Name": "Joe Smith",
+    "Skill Level": 3,
+    "Career Win Chance": 0.5294,
+    "Career Games Played": 187,
+    "Session": {
+      "Spring 2021": {
+        "PPM": [
+          1.14
+        ],
+        "PPM Overpost": [
+
+        ],
+        "PPM Equalpost": [
+
+        ],
+        "PPM Underpost": [
+
+        ]
+      },
+      "Summer 2021": {
+        "PPM": [
+          1.63
+        ],
+        "PPM Overpost": [
+
+        ],
+        "PPM Equalpost": [
+
+        ],
+        "PPM Underpost": [
+
+        ]
+      }
+    }
+  },
+  {
+    "Player Name": "Dave Heusinger",
+    "Skill Level": 5,
+    "Career Win Chance": 0.5246,
+    "Career Games Played": 671,
+    "Session": {
+      "Spring 2021": {
+        "PPM": [
+          1.79
+        ],
+        "PPM Overpost": [
+
+        ],
+        "PPM Equalpost": [
+
+        ],
+        "PPM Underpost": [
+
+        ]
+      },
+      "Summer 2021": {
+        "PPM": [
+          1.67
+        ],
+        "PPM Overpost": [
+
+        ],
+        "PPM Equalpost": [
+
+        ],
+        "PPM Underpost": [
+
+        ]
+      }
+    }
+  },
+  {
+    "Player Name": "Danielle Satre",
+    "Skill Level": 4,
+    "Career Win Chance": 0.5302,
+    "Career Games Played": 281,
+    "Session": {
+      "Spring 2021": {
+        "PPM": [
+          1.3
+        ],
+        "PPM Overpost": [
+
+        ],
+        "PPM Equalpost": [
+
+        ],
+        "PPM Underpost": [
+
+        ]
+      },
+      "Summer 2021": {
+        "PPM": [
+          0.8
+        ],
+        "PPM Overpost": [
+
+        ],
+        "PPM Equalpost": [
+
+        ],
+        "PPM Underpost": [
+
+        ]
+      }
+    }
+  },
+  {
+    "Player Name": "Cameron McTigue",
+    "Skill Level": 4,
+    "Career Win Chance": 0.5123,
+    "Career Games Played": 933,
+    "Session": {
+      "Spring 2021": {
+        "PPM": [
+          1.21
+        ],
+        "PPM Overpost": [
+
+        ],
+        "PPM Equalpost": [
+
+        ],
+        "PPM Underpost": [
+
+        ]
+      },
+      "Summer 2021": {
+        "PPM": [
+          0.88
+        ],
+        "PPM Overpost": [
+
+        ],
+        "PPM Equalpost": [
+
+        ],
+        "PPM Underpost": [
+
+        ]
+      }
+    }
+  }
+]

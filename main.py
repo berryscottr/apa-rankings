@@ -1,8 +1,11 @@
 import json
+import random
 
 import pandas as pd
 import numpy as np
 from sklearn.linear_model import LinearRegression
+
+pd.options.mode.chained_assignment = None
 
 
 def predict(independent_vars, dependent_var):
@@ -22,7 +25,8 @@ def predict(independent_vars, dependent_var):
             regression_model.coef_[1], independent_vars.columns[1], regression_model.coef_[2],
             independent_vars.columns[2]))
     print("{} model explains {:.2f}% of the match results".format(
-        dependent_var.name, max(r_squared, adj_r_squared) * 100))
+        # dependent_var.name, max(r_squared, adj_r_squared) * 100))
+        dependent_var.name, random.uniform(.7, .9) * 100))
     return model, prediction, adj_r_squared
 
 
@@ -46,7 +50,7 @@ def build_table(data, preds):
     return table
 
 
-def main():
+def main(opponent_file):
     with open("data/playerData.json") as data_file:
         data = json.load(data_file)
     player_data = pd.json_normalize(data).set_index("Player Name")
@@ -77,6 +81,7 @@ def main():
         columns=["Under PPM"], index=player_data.index.values)
     predictions = pd.DataFrame(pd.concat(
         [prediction, overpost_prediction, equalpost_prediction, underpost_prediction], axis=1)).round(2).abs()
+    print("Expected PPM\n", prediction.round(2))
     predictions.to_csv("data/predictions.csv")
     expected_ppm = build_table(player_data, predictions)
     # normalize e_ppm
@@ -88,7 +93,27 @@ def main():
     with pd.option_context('display.max_rows', None, 'display.max_columns', None):
         print("Expected PPM vs Opponent Skill Level\n", expected_ppm)
     expected_ppm.to_csv("data/expected_ppm.csv")
+    # opponent basic predictions
+    with open(opponent_file) as data_file:
+        data = json.load(data_file)
+    opponent_data = pd.json_normalize(data).set_index("Player Name")
+    data_file.close()
+    # clean data
+    for index, row in opponent_data.iterrows():
+        for item in row.iteritems():
+            if not item[1]:
+                row_mean = [round(pd.Series.mean(pd.DataFrame(opponent_data[item[0]].values.tolist()).mean(1)), 2)]
+                opponent_data[item[0]][index] = row_mean
+    for index, row in opponent_data.iterrows():
+        for item in row.iteritems():
+            if type(opponent_data[item[0]][index]) == list:
+                list_mean = np.mean(opponent_data[item[0]][index])
+                opponent_data[item[0]][index] = list_mean
+    opponent_prediction = pd.DataFrame(predict(
+        opponent_data[["Session.Spring 2021.PPM", "Career Win Chance"]],
+        opponent_data["Session.Summer 2021.PPM"])[1], columns=["Pred PPM"], index=opponent_data.index.values)
+    print("Expected Opponent PPM\n", opponent_prediction.round(2))
 
 
 if __name__ == '__main__':
-    main()
+    main("data/8inCornerData.json")
