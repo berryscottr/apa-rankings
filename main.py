@@ -13,8 +13,8 @@ def predict(independent_vars, dependent_var):
     model = regression_model.fit(independent_vars, dependent_var)
     predictors = pd.concat([dependent_var, independent_vars.iloc[:, 1:]], axis=1)
     prediction = regression_model.predict(predictors)
-    r_squared = 1 - (float(sum((dependent_var-prediction)**2)))/sum((dependent_var-pd.Series.mean(dependent_var))**2)
-    adj_r_squared = 1 - (1-r_squared)*(len(dependent_var)-1)/(len(dependent_var)-independent_vars.shape[1]-1)
+    r_squared = 1 - (float(sum((dependent_var - prediction) ** 2))) / sum((dependent_var - pd.Series.mean(dependent_var)) ** 2)
+    adj_r_squared = 1 - (1 - r_squared) * (len(dependent_var) - 1) / (len(dependent_var) - independent_vars.shape[1] - 1)
     if len(independent_vars.columns) == 2:
         print("{} = {:.2f} + {:.2f} * {} + {:.2f} * {}".format(
             dependent_var.name, regression_model.intercept_, regression_model.coef_[0], independent_vars.columns[0],
@@ -25,12 +25,12 @@ def predict(independent_vars, dependent_var):
             regression_model.coef_[1], independent_vars.columns[1], regression_model.coef_[2],
             independent_vars.columns[2]))
     print("{} model explains {:.2f}% of the match results".format(
-        # dependent_var.name, max(r_squared, adj_r_squared) * 100))
-        dependent_var.name, random.uniform(.7, .9) * 100))
+        dependent_var.name, max(r_squared, adj_r_squared) * 100))
+    # dependent_var.name, random.uniform(.7, .9) * 100))
     return model, prediction, adj_r_squared
 
 
-def build_table(data, preds):
+def build_table(data, predictions):
     column_list = []
     for opp_skill in range(2, 8):
         column = []
@@ -39,18 +39,18 @@ def build_table(data, preds):
             if abs(skill - opp_skill) >= 2:
                 column.append("")
             elif skill > opp_skill:
-                column.append(preds["Over PPM"].values[index])
+                column.append(predictions["Over PPM"].values[index])
             elif skill == opp_skill:
-                column.append(preds["Equal PPM"].values[index])
+                column.append(predictions["Equal PPM"].values[index])
             elif skill < opp_skill:
-                column.append(preds["Under PPM"].values[index])
+                column.append(predictions["Under PPM"].values[index])
         column = pd.DataFrame(column, columns=[opp_skill], index=data.index.values)
         column_list.append(column)
     table = pd.concat(column_list, axis=1)
     return table
 
 
-def main(opponent_file):
+def main():
     with open("data/playerData.json") as data_file:
         data = json.load(data_file)
     player_data = pd.json_normalize(data).set_index("Player Name")
@@ -94,26 +94,26 @@ def main(opponent_file):
         print("Expected PPM vs Opponent Skill Level\n", expected_ppm)
     expected_ppm.to_csv("data/expected_ppm.csv")
     # opponent basic predictions
-    with open(opponent_file) as data_file:
-        data = json.load(data_file)
-    opponent_data = pd.json_normalize(data).set_index("Player Name")
-    data_file.close()
-    # clean data
-    for index, row in opponent_data.iterrows():
-        for item in row.iteritems():
-            if not item[1]:
-                row_mean = [round(pd.Series.mean(pd.DataFrame(opponent_data[item[0]].values.tolist()).mean(1)), 2)]
-                opponent_data[item[0]][index] = row_mean
-    for index, row in opponent_data.iterrows():
-        for item in row.iteritems():
-            if type(opponent_data[item[0]][index]) == list:
-                list_mean = np.mean(opponent_data[item[0]][index])
-                opponent_data[item[0]][index] = list_mean
-    opponent_prediction = pd.DataFrame(predict(
-        opponent_data[["Session.Spring 2021.PPM", "Career Win Chance"]],
-        opponent_data["Session.Summer 2021.PPM"])[1], columns=["Pred PPM"], index=opponent_data.index.values)
-    print("Expected Opponent PPM\n", opponent_prediction.round(2))
+    # with open("data/8inCornerData.json") as data_file:
+    #     data = json.load(data_file)
+    # opponent_data = pd.json_normalize(data).set_index("Player Name")
+    # data_file.close()
+    # # clean data
+    # for index, row in opponent_data.iterrows():
+    #     for item in row.iteritems():
+    #         if not item[1]:
+    #             row_mean = [round(pd.Series.mean(pd.DataFrame(opponent_data[item[0]].values.tolist()).mean(1)), 2)]
+    #             opponent_data[item[0]][index] = row_mean
+    # for index, row in opponent_data.iterrows():
+    #     for item in row.iteritems():
+    #         if type(opponent_data[item[0]][index]) == list:
+    #             list_mean = np.mean(opponent_data[item[0]][index])
+    #             opponent_data[item[0]][index] = list_mean
+    # opponent_prediction = pd.DataFrame(predict(
+    #     opponent_data[["Session.Spring 2021.PPM", "Career Win Chance"]],
+    #     opponent_data["Session.Summer 2021.PPM"])[1], columns=["Pred PPM"], index=opponent_data.index.values)
+    # print("Expected Opponent PPM\n", opponent_prediction.round(2))
 
 
 if __name__ == '__main__':
-    main("data/8inCornerData.json")
+    main()

@@ -2,6 +2,8 @@ import json
 import pandas as pd
 from shutil import copyfile
 
+pd.options.mode.chained_assignment = None
+
 
 class PlayerData:
     def __init__(self, file):
@@ -65,6 +67,12 @@ class PlayerData:
                         "PPM Overpost": self.data["Session.Summer 2021.PPM Overpost"][player],
                         "PPM Equalpost": self.data["Session.Summer 2021.PPM Equalpost"][player],
                         "PPM Underpost": self.data["Session.Summer 2021.PPM Underpost"][player]
+                    },
+                    "Fall 2021": {
+                        "PPM": self.data["Session.Fall 2021.PPM"][player],
+                        "PPM Overpost": self.data["Session.Fall 2021.PPM Overpost"][player],
+                        "PPM Equalpost": self.data["Session.Fall 2021.PPM Equalpost"][player],
+                        "PPM Underpost": self.data["Session.Fall 2021.PPM Underpost"][player]
                     }
                 }
             })
