@@ -13,8 +13,10 @@ def predict(independent_vars, dependent_var):
     model = regression_model.fit(independent_vars, dependent_var)
     predictors = pd.concat([dependent_var, independent_vars.iloc[:, 1:]], axis=1)
     prediction = regression_model.predict(predictors)
-    r_squared = 1 - (float(sum((dependent_var - prediction) ** 2))) / sum((dependent_var - pd.Series.mean(dependent_var)) ** 2)
-    adj_r_squared = 1 - (1 - r_squared) * (len(dependent_var) - 1) / (len(dependent_var) - independent_vars.shape[1] - 1)
+    r_squared = 1 - (float(sum((dependent_var - prediction) ** 2))) / sum(
+        (dependent_var - pd.Series.mean(dependent_var)) ** 2)
+    adj_r_squared = 1 - (1 - r_squared) * (len(dependent_var) - 1) / (
+            len(dependent_var) - independent_vars.shape[1] - 1)
     if len(independent_vars.columns) == 2:
         print("{} = {:.2f} + {:.2f} * {} + {:.2f} * {}".format(
             dependent_var.name, regression_model.intercept_, regression_model.coef_[0], independent_vars.columns[0],
@@ -55,12 +57,36 @@ def main():
         data = json.load(data_file)
     player_data = pd.json_normalize(data).set_index("Player Name")
     data_file.close()
-    # clean data
+    # TEMP combine fall with summer
+    for index, row in player_data.iterrows():
+        num_summer_games = 0
+        num_fall_games = 0
+        num_fall_points = 0
+        for item in row.iteritems():
+            if "Summer" in item[0] and "post" in item[0]:
+                combined_list = player_data[item[0]][index]
+                num_summer_games += len(combined_list)
+                for score in player_data[item[0].replace("Summer", "Fall", -1)][index]:
+                    combined_list.append(score)
+                    num_fall_games += 1
+                    num_fall_points += score
+                player_data[item[0]][index] = combined_list
+        for item in row.iteritems():
+            if "Summer" in item[0] and "post" not in item[0]:
+                num_summer_points = item[1]
+                try:
+                    ppm = num_summer_points[0] * num_summer_games + num_fall_points / (
+                            num_summer_games + num_fall_games)
+                except IndexError:
+                    ppm = num_fall_points / num_fall_games
+                player_data[item[0]][index] = ppm
+    # convert list to float
     for index, row in player_data.iterrows():
         for item in row.iteritems():
             if type(player_data[item[0]][index]) == list:
                 list_mean = np.mean(player_data[item[0]][index])
                 player_data[item[0]][index] = list_mean
+    # extrapolate null values
     for index, row in player_data.iterrows():
         for item in row.iteritems():
             if np.isnan(item[1]):
@@ -88,8 +114,10 @@ def main():
     for index, row in expected_ppm.iterrows():
         for item in row.iteritems():
             if item[1] != '':
-                if item[1] > 3:
-                    expected_ppm[item[0]][index] = 3 - (item[1] - 3)
+                if item[1] > 2.4:
+                    expected_ppm[item[0]][index] = 2.4 - (item[1] - 2.4)
+                elif item[1] < 0.6:
+                    expected_ppm[item[0]][index] = 0.6 + (0.6 - item[1])
     with pd.option_context('display.max_rows', None, 'display.max_columns', None):
         print("Expected PPM vs Opponent Skill Level\n", expected_ppm)
     expected_ppm.to_csv("data/expected_ppm.csv")
