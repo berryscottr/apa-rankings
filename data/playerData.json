@@ -6,7 +6,9 @@
     "Career Games Played": 87,
     "Session": {
       "Spring 2021": {
-        "PPM": [],
+        "PPM": [
+          1.45
+        ],
         "PPM Overpost": [
           0,
           0
@@ -238,7 +240,7 @@
   },
   {
     "Player Name": "Clint McKoy",
-    "Skill Level": 5,
+    "Skill Level": 6,
     "Career Win Chance": 0.5115,
     "Career Games Played": 393,
     "Session": {
@@ -411,7 +413,7 @@
   },
   {
     "Player Name": "Brad Oldershaw",
-    "Skill Level": 3,
+    "Skill Level": 2,
     "Career Win Chance": 0.000,
     "Career Games Played": 1,
     "Session": {

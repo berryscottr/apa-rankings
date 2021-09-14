@@ -58,14 +58,14 @@ def main():
     # clean data
     for index, row in player_data.iterrows():
         for item in row.iteritems():
-            if not item[1]:
-                row_mean = [round(pd.Series.mean(pd.DataFrame(player_data[item[0]].values.tolist()).mean(1)), 2)]
-                player_data[item[0]][index] = row_mean
-    for index, row in player_data.iterrows():
-        for item in row.iteritems():
             if type(player_data[item[0]][index]) == list:
                 list_mean = np.mean(player_data[item[0]][index])
                 player_data[item[0]][index] = list_mean
+    for index, row in player_data.iterrows():
+        for item in row.iteritems():
+            if np.isnan(item[1]):
+                row_mean = round(pd.Series.mean(pd.DataFrame(player_data[item[0]].values.tolist()).mean(1)), 2)
+                player_data[item[0]][index] = row_mean
     prediction = pd.DataFrame(predict(
         player_data[["Session.Spring 2021.PPM", "Career Win Chance"]],
         player_data["Session.Summer 2021.PPM"])[1], columns=["Pred PPM"], index=player_data.index.values)
