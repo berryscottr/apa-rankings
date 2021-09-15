@@ -1,6 +1,4 @@
 import json
-import random
-
 import pandas as pd
 import numpy as np
 from sklearn.linear_model import LinearRegression
@@ -16,7 +14,6 @@ def normalize_preds(dataframe):
                     dataframe[item[0]][index] = 2.4 - (item[1] - 2.4)
                 elif item[1] < 0.6:
                     dataframe[item[0]][index] = 0.6 + (0.6 - item[1])
-
 
 
 def predict(independent_vars, dependent_var):
