@@ -75,8 +75,8 @@ def main():
             if "Summer" in item[0] and "post" not in item[0]:
                 num_summer_points = item[1]
                 try:
-                    ppm = num_summer_points[0] * num_summer_games + num_fall_points / (
-                            num_summer_games + num_fall_games)
+                    ppm = (num_summer_points[0] * num_summer_games + num_fall_points) / \
+                          (num_summer_games + num_fall_games)
                 except IndexError:
                     ppm = num_fall_points / num_fall_games
                 player_data[item[0]][index] = ppm
