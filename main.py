@@ -107,6 +107,12 @@ def main():
         columns=["Under PPM"], index=player_data.index.values)
     predictions = pd.DataFrame(pd.concat(
         [prediction, overpost_prediction, equalpost_prediction, underpost_prediction], axis=1)).round(2).abs()
+    # normalize preds
+    for index, row in prediction.iterrows():
+        for item in row.iteritems():
+            if item[1] != '':
+                if item[1] < 0:
+                    prediction[item[0]][index] = 0 + (0 - item[1])
     print("Expected PPM\n", prediction.round(2))
     predictions.to_csv("data/predictions.csv")
     expected_ppm = build_table(player_data, predictions)
