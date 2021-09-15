@@ -8,6 +8,17 @@ from sklearn.linear_model import LinearRegression
 pd.options.mode.chained_assignment = None
 
 
+def normalize_preds(dataframe):
+    for index, row in dataframe.iterrows():
+        for item in row.iteritems():
+            if item[1] != '':
+                if item[1] > 2.4:
+                    dataframe[item[0]][index] = 2.4 - (item[1] - 2.4)
+                elif item[1] < 0.6:
+                    dataframe[item[0]][index] = 0.6 + (0.6 - item[1])
+
+
+
 def predict(independent_vars, dependent_var):
     regression_model = LinearRegression()
     model = regression_model.fit(independent_vars, dependent_var)
@@ -101,29 +112,25 @@ def main():
     equalpost_prediction = pd.DataFrame(predict(
         player_data[["Session.Spring 2021.PPM Equalpost", "Session.Spring 2021.PPM", "Career Win Chance"]],
         player_data["Session.Summer 2021.PPM Equalpost"])[1], columns=["Equal PPM"], index=player_data.index.values)
-    # extrapolate underpost
-    underpost_prediction = pd.DataFrame(
-        prediction.values * 3 - overpost_prediction.values - equalpost_prediction.values,
-        columns=["Under PPM"], index=player_data.index.values)
-    predictions = pd.DataFrame(pd.concat(
-        [prediction, overpost_prediction, equalpost_prediction, underpost_prediction], axis=1)).round(2).abs()
     # normalize preds
     for index, row in prediction.iterrows():
         for item in row.iteritems():
             if item[1] != '':
                 if item[1] < 0:
                     prediction[item[0]][index] = 0 + (0 - item[1])
+    normalize_preds(overpost_prediction)
+    normalize_preds(equalpost_prediction)
+    # extrapolate underpost
+    underpost_prediction = pd.DataFrame(
+        prediction.values * 3 - overpost_prediction.values - equalpost_prediction.values,
+        columns=["Under PPM"], index=player_data.index.values)
+    predictions = pd.DataFrame(pd.concat(
+        [prediction, overpost_prediction, equalpost_prediction, underpost_prediction], axis=1)).round(2).abs()
     print("Expected PPM\n", prediction.round(2))
     predictions.to_csv("data/predictions.csv")
     expected_ppm = build_table(player_data, predictions)
     # normalize e_ppm
-    for index, row in expected_ppm.iterrows():
-        for item in row.iteritems():
-            if item[1] != '':
-                if item[1] > 2.4:
-                    expected_ppm[item[0]][index] = 2.4 - (item[1] - 2.4)
-                elif item[1] < 0.6:
-                    expected_ppm[item[0]][index] = 0.6 + (0.6 - item[1])
+    normalize_preds(expected_ppm)
     with pd.option_context('display.max_rows', None, 'display.max_columns', None):
         print("Expected PPM vs Opponent Skill Level\n", expected_ppm)
     expected_ppm.to_csv("data/expected_ppm.csv")
