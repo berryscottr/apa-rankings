@@ -18,7 +18,6 @@ def normalize_preds(dataframe):
                     dataframe[item[0]][index] = 0.6 + (0.6 - item[1])
 
 
-
 def predict(independent_vars, dependent_var):
     regression_model = LinearRegression()
     model = regression_model.fit(independent_vars, dependent_var)
