@@ -132,8 +132,8 @@ def main(opponent):
         print("Expected PPM vs Opponent Skill Level\n", expected_ppm)
     expected_ppm.to_csv("data/expected_ppm.csv")
     # opponent basic predictions
-    if opponent:
-        with open("data/8inCornerData.json") as data_file:
+    if opponent != "":
+        with open("data/{opponent}Data.json".format(opponent=opponent)) as data_file:
             data = json.load(data_file)
         opponent_data = pd.json_normalize(data).set_index("Player Name")
         data_file.close()
@@ -155,4 +155,4 @@ def main(opponent):
 
 
 if __name__ == '__main__':
-    main(opponent=False)
+    main(opponent="")

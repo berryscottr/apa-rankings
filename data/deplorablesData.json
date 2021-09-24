@@ -1,0 +1,352 @@
+[
+  {
+    "Player Name": "Larry Hardison",
+    "Skill Level": 6,
+    "Career Win Chance": 0.6313,
+    "Career Games Played": 887,
+    "Session": {
+      "Spring 2021": {
+        "PPM": [
+          1.71
+        ],
+        "PPM Overpost": [
+
+        ],
+        "PPM Equalpost": [
+
+        ],
+        "PPM Underpost": [
+
+        ]
+      },
+      "Summer 2021": {
+        "PPM": [
+          1.38
+        ],
+        "PPM Overpost": [
+
+        ],
+        "PPM Equalpost": [
+
+        ],
+        "PPM Underpost": [
+
+        ]
+      },
+      "Fall 2021": {
+        "PPM": [
+          1.75
+        ],
+        "PPM Overpost": [
+
+        ],
+        "PPM Equalpost": [
+
+        ],
+        "PPM Underpost": [
+
+        ]
+      }
+    }
+  },
+  {
+    "Player Name": "Tryon Huggins",
+    "Skill Level": 6,
+    "Career Win Chance": 0.6073,
+    "Career Games Played": 545,
+    "Session": {
+      "Spring 2021": {
+        "PPM": [
+          1.13
+        ],
+        "PPM Overpost": [
+
+        ],
+        "PPM Equalpost": [
+
+        ],
+        "PPM Underpost": [
+
+        ]
+      },
+      "Summer 2021": {
+        "PPM": [
+          1
+        ],
+        "PPM Overpost": [
+
+        ],
+        "PPM Equalpost": [
+
+        ],
+        "PPM Underpost": [
+
+        ]
+      },
+      "Fall 2021": {
+        "PPM": [
+          3
+        ],
+        "PPM Overpost": [
+
+        ],
+        "PPM Equalpost": [
+
+        ],
+        "PPM Underpost": [
+
+        ]
+      }
+    }
+  },
+  {
+    "Player Name": "Martha Hardison",
+    "Skill Level": 3,
+    "Career Win Chance": 0.4868,
+    "Career Games Played": 1064,
+    "Session": {
+      "Spring 2021": {
+        "PPM": [
+          0.8
+        ],
+        "PPM Overpost": [
+
+        ],
+        "PPM Equalpost": [
+
+        ],
+        "PPM Underpost": [
+
+        ]
+      },
+      "Summer 2021": {
+        "PPM": [
+          1.8
+        ],
+        "PPM Overpost": [
+
+        ],
+        "PPM Equalpost": [
+
+        ],
+        "PPM Underpost": [
+
+        ]
+      },
+      "Fall 2021": {
+        "PPM": [
+          2.5
+        ],
+        "PPM Overpost": [
+
+        ],
+        "PPM Equalpost": [
+
+        ],
+        "PPM Underpost": [
+
+        ]
+      }
+    }
+  },
+  {
+    "Player Name": "Chris Cannon",
+    "Skill Level": 3,
+    "Career Win Chance": 0.4179,
+    "Career Games Played": 67,
+    "Session": {
+      "Spring 2021": {
+        "PPM": [
+          1.25
+        ],
+        "PPM Overpost": [
+
+        ],
+        "PPM Equalpost": [
+
+        ],
+        "PPM Underpost": [
+
+        ]
+      },
+      "Summer 2021": {
+        "PPM": [
+          1.4
+        ],
+        "PPM Overpost": [
+
+        ],
+        "PPM Equalpost": [
+
+        ],
+        "PPM Underpost": [
+
+        ]
+      },
+      "Fall 2021": {
+        "PPM": [
+          2
+        ],
+        "PPM Overpost": [
+
+        ],
+        "PPM Equalpost": [
+
+        ],
+        "PPM Underpost": [
+
+        ]
+      }
+    }
+  },
+  {
+    "Player Name": "Shane Swett",
+    "Skill Level": 5,
+    "Career Win Chance": 0.4986,
+    "Career Games Played": 734,
+    "Session": {
+      "Spring 2021": {
+        "PPM": [
+          1.19
+        ],
+        "PPM Overpost": [
+
+        ],
+        "PPM Equalpost": [
+
+        ],
+        "PPM Underpost": [
+
+        ]
+      },
+      "Summer 2021": {
+        "PPM": [
+          1.55
+        ],
+        "PPM Overpost": [
+
+        ],
+        "PPM Equalpost": [
+
+        ],
+        "PPM Underpost": [
+
+        ]
+      },
+      "Fall 2021": {
+        "PPM": [
+          0.5
+        ],
+        "PPM Overpost": [
+
+        ],
+        "PPM Equalpost": [
+
+        ],
+        "PPM Underpost": [
+
+        ]
+      }
+    }
+  },
+  {
+    "Player Name": "Renee Catron",
+    "Skill Level": 2,
+    "Career Win Chance": 0.3425,
+    "Career Games Played": 73,
+    "Session": {
+      "Spring 2021": {
+        "PPM": [
+          1.24
+        ],
+        "PPM Overpost": [
+
+        ],
+        "PPM Equalpost": [
+
+        ],
+        "PPM Underpost": [
+
+        ]
+      },
+      "Summer 2021": {
+        "PPM": [
+          1.63
+        ],
+        "PPM Overpost": [
+
+        ],
+        "PPM Equalpost": [
+
+        ],
+        "PPM Underpost": [
+
+        ]
+      },
+      "Fall 2021": {
+        "PPM": [
+          1.75
+        ],
+        "PPM Overpost": [
+
+        ],
+        "PPM Equalpost": [
+
+        ],
+        "PPM Underpost": [
+
+        ]
+      }
+    }
+  },
+  {
+    "Player Name": "Mike Bottoms",
+    "Skill Level": 7,
+    "Career Win Chance": 0.725,
+    "Career Games Played": 200,
+    "Session": {
+      "Spring 2021": {
+        "PPM": [
+          2
+        ],
+        "PPM Overpost": [
+
+        ],
+        "PPM Equalpost": [
+
+        ],
+        "PPM Underpost": [
+
+        ]
+      },
+      "Summer 2021": {
+        "PPM": [
+          3
+        ],
+        "PPM Overpost": [
+
+        ],
+        "PPM Equalpost": [
+
+        ],
+        "PPM Underpost": [
+
+        ]
+      },
+      "Fall 2021": {
+        "PPM": [
+          1.5
+        ],
+        "PPM Overpost": [
+
+        ],
+        "PPM Equalpost": [
+
+        ],
+        "PPM Underpost": [
+
+        ]
+      }
+    }
+  }
+]
