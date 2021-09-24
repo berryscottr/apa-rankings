@@ -11,9 +11,9 @@ def normalize_preds(dataframe):
         for item in row.iteritems():
             if item[1] != '':
                 if item[1] > 2.4:
-                    dataframe[item[0]][index] = 2.4 - (item[1] - 2.4)
+                    dataframe[item[0]][index] = round(2.4 - (item[1] - 2.4), 2)
                 elif item[1] < 0.6:
-                    dataframe[item[0]][index] = 0.6 + (0.6 - item[1])
+                    dataframe[item[0]][index] = round(0.6 + (0.6 - item[1]), 2)
 
 
 def predict(independent_vars, dependent_var):
@@ -60,7 +60,7 @@ def build_table(data, predictions):
     return table
 
 
-def main():
+def main(opponent):
     with open("data/playerData.json") as data_file:
         data = json.load(data_file)
     player_data = pd.json_normalize(data).set_index("Player Name")
@@ -132,26 +132,27 @@ def main():
         print("Expected PPM vs Opponent Skill Level\n", expected_ppm)
     expected_ppm.to_csv("data/expected_ppm.csv")
     # opponent basic predictions
-    # with open("data/8inCornerData.json") as data_file:
-    #     data = json.load(data_file)
-    # opponent_data = pd.json_normalize(data).set_index("Player Name")
-    # data_file.close()
-    # # clean data
-    # for index, row in opponent_data.iterrows():
-    #     for item in row.iteritems():
-    #         if not item[1]:
-    #             row_mean = [round(pd.Series.mean(pd.DataFrame(opponent_data[item[0]].values.tolist()).mean(1)), 2)]
-    #             opponent_data[item[0]][index] = row_mean
-    # for index, row in opponent_data.iterrows():
-    #     for item in row.iteritems():
-    #         if type(opponent_data[item[0]][index]) == list:
-    #             list_mean = np.mean(opponent_data[item[0]][index])
-    #             opponent_data[item[0]][index] = list_mean
-    # opponent_prediction = pd.DataFrame(predict(
-    #     opponent_data[["Session.Spring 2021.PPM", "Career Win Chance"]],
-    #     opponent_data["Session.Summer 2021.PPM"])[1], columns=["Pred PPM"], index=opponent_data.index.values)
-    # print("Expected Opponent PPM\n", opponent_prediction.round(2))
+    if opponent:
+        with open("data/8inCornerData.json") as data_file:
+            data = json.load(data_file)
+        opponent_data = pd.json_normalize(data).set_index("Player Name")
+        data_file.close()
+        # clean data
+        for index, row in opponent_data.iterrows():
+            for item in row.iteritems():
+                if not item[1]:
+                    row_mean = [round(pd.Series.mean(pd.DataFrame(opponent_data[item[0]].values.tolist()).mean(1)), 2)]
+                    opponent_data[item[0]][index] = row_mean
+        for index, row in opponent_data.iterrows():
+            for item in row.iteritems():
+                if type(opponent_data[item[0]][index]) == list:
+                    list_mean = np.mean(opponent_data[item[0]][index])
+                    opponent_data[item[0]][index] = list_mean
+        opponent_prediction = pd.DataFrame(predict(
+            opponent_data[["Session.Spring 2021.PPM", "Career Win Chance"]],
+            opponent_data["Session.Summer 2021.PPM"])[1], columns=["Pred PPM"], index=opponent_data.index.values)
+        print("Expected Opponent PPM\n", opponent_prediction.round(2))
 
 
 if __name__ == '__main__':
-    main()
+    main(opponent=False)
