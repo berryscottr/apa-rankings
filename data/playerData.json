@@ -2,497 +2,555 @@
   {
     "Player Name": "Wes Young",
     "Skill Level": 4,
-    "Career Win Chance": 0.4778,
-    "Career Games Played": 90,
-    "Session": {
-      "Spring 2021": {
-        "PPM": [
-          1.45
-        ],
-        "PPM Overpost": [
-          0,
-          0
-        ],
-        "PPM Equalpost": [
-          3,
-          1,
-          3,
-          3,
-          2,
-          0,
-          0,
-          3,
-          0
-        ],
-        "PPM Underpost": [
-          1
-        ]
+    "Career Wins": 44,
+    "Career Matches": 92,
+    "Games": [
+      {
+        "Session": "Fall 2021",
+        "Week": 1,
+        "Self": {
+          "Skill Level": 4,
+          "Points": 0,
+          "Games Won": 1
+        },
+        "Opponent": {
+          "Skill Level": 4,
+          "Points": 2,
+          "Games Won": 1
+        }
       },
-      "Summer 2021": {
-        "PPM": [
-          1.75
-        ],
-        "PPM Overpost": [
-          0
-        ],
-        "PPM Equalpost": [
-          1,
-          1,
-          2,
-          2,
-          3
-        ],
-        "PPM Underpost": [
-          3,
-          2,
-          1
-        ]
+      {
+        "Session": "Fall 2021",
+        "Week": 3,
+        "Self": {
+          "Skill Level": 3,
+          "Points": 3,
+          "Games Won": 2
+        },
+        "Opponent": {
+          "Skill Level": 3,
+          "Points": 0,
+          "Games Won": 0
+        }
       },
-      "Fall 2021": {
-        "PPM": [
-          0,
-          3,
-          3,
-          3,
-          3
-        ],
-        "PPM Overpost": [],
-        "PPM Equalpost": [
-          0,
-          3,
-          3,
-          3,
-          3
-        ],
-        "PPM Underpost": []
+      {
+        "Session": "Fall 2021",
+        "Week": 4,
+        "Self": {
+          "Skill Level": 3,
+          "Points": 3,
+          "Games Won": 2
+        },
+        "Opponent": {
+          "Skill Level": 3,
+          "Points": 0,
+          "Games Won": 0
+        }
+      },
+      {
+        "Session": "Fall 2021",
+        "Week": 5,
+        "Self": {
+          "Skill Level": 3,
+          "Points": 3,
+          "Games Won": 2
+        },
+        "Opponent": {
+          "Skill Level": 3,
+          "Points": 0,
+          "Games Won": 0
+        }
+      },
+      {
+        "Session": "Fall 2021",
+        "Week": 7,
+        "Self": {
+          "Skill Level": 3,
+          "Points": 3,
+          "Games Won": 2
+        },
+        "Opponent": {
+          "Skill Level": 3,
+          "Points": 0,
+          "Games Won": 0
+        }
       }
-    }
+    ]
   },
   {
     "Player Name": "Brian Knapp",
     "Skill Level": 6,
-    "Career Win Chance": 0.4128,
-    "Career Games Played": 63,
-    "Session": {
-      "Spring 2021": {
-        "PPM": [
-          0.71
-        ],
-        "PPM Overpost": [
-          0,
-          2,
-          0,
-          2
-        ],
-        "PPM Equalpost": [
-          0,
-          1,
-          2,
-          0,
-          0
-        ],
-        "PPM Underpost": []
+    "Career Wins": 26,
+    "Career Games": 63,
+    "Games": [
+      {
+        "Session": "Fall 2021",
+        "Week": 1,
+        "Self": {
+          "Skill Level": 6,
+          "Points": 3,
+          "Games Won": 5
+        },
+        "Opponent": {
+          "Skill Level": 5,
+          "Points": 0,
+          "Games Won": 0
+        }
       },
-      "Summer 2021": {
-        "PPM": [
-          0.67
-        ],
-        "PPM Overpost": [
-          1,
-          2,
-          0
-        ],
-        "PPM Equalpost": [
-          0,
-          2,
-          0,
-          0
-        ],
-        "PPM Underpost": [
-          0,
-          1,
-          1
-        ]
+      {
+        "Session": "Fall 2021",
+        "Week": 4,
+        "Self": {
+          "Skill Level": 6,
+          "Points": 2,
+          "Games Won": 5
+        },
+        "Opponent": {
+          "Skill Level": 6,
+          "Points": 1,
+          "Games Won": 4
+        }
       },
-      "Fall 2021": {
-        "PPM": [
-          3,
-          2,
-          0,
-          0,
-          2
-        ],
-        "PPM Overpost": [
-          3,
-          2
-        ],
-        "PPM Equalpost": [
-          2,
-          0
-        ],
-        "PPM Underpost": [
-          0
-        ]
+      {
+        "Session": "Fall 2021",
+        "Week": 5,
+        "Self": {
+          "Skill Level": 6,
+          "Points": 0,
+          "Games Won": 0
+        },
+        "Opponent": {
+          "Skill Level": 6,
+          "Points": 3,
+          "Games Won": 5
+        }
+      },
+      {
+        "Session": "Fall 2021",
+        "Week": 6,
+        "Self": {
+          "Skill Level": 6,
+          "Points": 0,
+          "Games Won": 1
+        },
+        "Opponent": {
+          "Skill Level": 7,
+          "Points": 2,
+          "Games Won": 5
+        }
+      },
+      {
+        "Session": "Fall 2021",
+        "Week": 7,
+        "Self": {
+          "Skill Level": 6,
+          "Points": 2,
+          "Games Won": 5
+        },
+        "Opponent": {
+          "Skill Level": 4,
+          "Points": 0,
+          "Games Won": 1
+        }
       }
-    }
+    ]
   },
   {
     "Player Name": "John Wigart",
     "Skill Level": 4,
-    "Career Win Chance": 0.5397,
-    "Career Games Played": 63,
-    "Session": {
-      "Spring 2021": {
-        "PPM": [
-          1
-        ],
-        "PPM Overpost": [
-          1,
-          0,
-          3
-        ],
-        "PPM Equalpost": [
-          2,
-          0,
-          0,
-          2,
-          2
-        ],
-        "PPM Underpost": [
-          1,
-          2,
-          0
-        ]
+    "Career Wins": 34,
+    "Career Games": 64,
+    "Games": [
+      {
+        "Session": "Fall 2021",
+        "Week": 1,
+        "Self": {
+          "Skill Level": 5,
+          "Points": 3,
+          "Games Won": 4
+        },
+        "Opponent": {
+          "Skill Level": 5,
+          "Points": 0,
+          "Games Won": 0
+        }
       },
-      "Summer 2021": {
-        "PPM": [
-          0.71
-        ],
-        "PPM Overpost": [
-          0,
-          2,
-          2
-        ],
-        "PPM Equalpost": [
-          0,
-          0,
-          1
-        ],
-        "PPM Underpost": [
-          0
-        ]
+      {
+        "Session": "Fall 2021",
+        "Week": 2,
+        "Self": {
+          "Skill Level": 5,
+          "Points": 0,
+          "Games Won": 2
+        },
+        "Opponent": {
+          "Skill Level": 5,
+          "Points": 2,
+          "Games Won": 4
+        }
       },
-      "Fall 2021": {
-        "PPM": [
-          3,
-          0,
-          0,
-          0,
-          1
-        ],
-        "PPM Overpost": [
-          1
-        ],
-        "PPM Equalpost": [
-          3,
-          0,
-          0,
-          0
-        ],
-        "PPM Underpost": []
+      {
+        "Session": "Fall 2021",
+        "Week": 3,
+        "Self": {
+          "Skill Level": 5,
+          "Points": 0,
+          "Games Won": 1
+        },
+        "Opponent": {
+          "Skill Level": 5,
+          "Points": 2,
+          "Games Won": 4
+        }
+      },
+      {
+        "Session": "Fall 2021",
+        "Week": 4,
+        "Self": {
+          "Skill Level": 4,
+          "Points": 0,
+          "Games Won": 1
+        },
+        "Opponent": {
+          "Skill Level": 4,
+          "Points": 2,
+          "Games Won": 3
+        }
+      },
+      {
+        "Session": "Fall 2021",
+        "Week": 7,
+        "Self": {
+          "Skill Level": 4,
+          "Points": 1,
+          "Games Won": 2
+        },
+        "Opponent": {
+          "Skill Level": 3,
+          "Points": 2,
+          "Games Won": 2
+        }
       }
-    }
+    ]
   },
   {
     "Player Name": "Brian Lillard",
     "Skill Level": 5,
-    "Career Win Chance": 0.5807,
-    "Career Games Played": 62,
-    "Session": {
-      "Spring 2021": {
-        "PPM": [
-          1.14
-        ],
-        "PPM Overpost": [
-          2
-        ],
-        "PPM Equalpost": [
-          2,
-          0,
-          0,
-          3,
-          1
-        ],
-        "PPM Underpost": [
-          0
-        ]
+    "Career Wins": 37,
+    "Career Games": 64,
+    "Games": [
+      {
+        "Session": "Fall 2021",
+        "Week": 2,
+        "Self": {
+          "Skill Level": 5,
+          "Points": 2,
+          "Games Won": 4
+        },
+        "Opponent": {
+          "Skill Level": 6,
+          "Points": 1,
+          "Games Won": 4
+        }
       },
-      "Summer 2021": {
-        "PPM": [
-          2.33
-        ],
-        "PPM Overpost": [
-          0,
-          3,
-          2
-        ],
-        "PPM Equalpost": [
-          3,
-          3,
-          2,
-          3,
-          3
-        ],
-        "PPM Underpost": [
-          2,
-          2
-        ]
+      {
+        "Session": "Fall 2021",
+        "Week": 3,
+        "Self": {
+          "Skill Level": 5,
+          "Points": 0,
+          "Games Won": 0
+        },
+        "Opponent": {
+          "Skill Level": 4,
+          "Points": 3,
+          "Games Won": 3
+        }
       },
-      "Fall 2021": {
-        "PPM": [
-          2,
-          0,
-          0,
-          2,
-          2
-        ],
-        "PPM Overpost": [
-          0
-        ],
-        "PPM Equalpost": [
-          0,
-          2,
-          2
-        ],
-        "PPM Underpost": [
-          2
-        ]
+      {
+        "Session": "Fall 2021",
+        "Week": 5,
+        "Self": {
+          "Skill Level": 5,
+          "Points": 0,
+          "Games Won": 2
+        },
+        "Opponent": {
+          "Skill Level": 5,
+          "Points": 2,
+          "Games Won": 4
+        }
+      },
+      {
+        "Session": "Fall 2021",
+        "Week": 6,
+        "Self": {
+          "Skill Level": 5,
+          "Points": 2,
+          "Games Won": 4
+        },
+        "Opponent": {
+          "Skill Level": 5,
+          "Points": 0,
+          "Games Won": 1
+        }
+      },
+      {
+        "Session": "Fall 2021",
+        "Week": 7,
+        "Self": {
+          "Skill Level": 5,
+          "Points": 2,
+          "Games Won": 4
+        },
+        "Opponent": {
+          "Skill Level": 5,
+          "Points": 1,
+          "Games Won": 3
+        }
       }
-    }
+    ]
   },
   {
     "Player Name": "Clint McKoy",
     "Skill Level": 6,
-    "Career Win Chance": 0.5127,
-    "Career Games Played": 394,
-    "Session": {
-      "Spring 2021": {
-        "PPM": [
-          1.9
-        ],
-        "PPM Overpost": [
-          2,
-          3,
-          3
-        ],
-        "PPM Equalpost": [
-          2,
-          0,
-          0,
-          3,
-          0
-        ],
-        "PPM Underpost": [
-          2,
-          3,
-          2
-        ]
+    "Career Wins": 203,
+    "Career Games": 396,
+    "Games": [
+      {
+        "Session": "Fall 2021",
+        "Week": 1,
+        "Self": {
+          "Skill Level": 5,
+          "Points": 2,
+          "Games Won": 4
+        },
+        "Opponent": {
+          "Skill Level": 5,
+          "Points": 1,
+          "Games Won": 3
+        }
       },
-      "Summer 2021": {
-        "PPM": [
-          1.78
-        ],
-        "PPM Overpost": [
-          2,
-          2,
-          3
-        ],
-        "PPM Equalpost": [
-          0,
-          2,
-          2
-        ],
-        "PPM Underpost": [
-          2,
-          2,
-          2
-        ]
+      {
+        "Session": "Fall 2021",
+        "Week": 2,
+        "Self": {
+          "Skill Level": 5,
+          "Points": 3,
+          "Games Won": 4
+        },
+        "Opponent": {
+          "Skill Level": 5,
+          "Points": 0,
+          "Games Won": 0
+        }
       },
-      "Fall 2021": {
-        "PPM": [
-          2,
-          0,
-          3,
-          2
-        ],
-        "PPM Overpost": [
-          0
-        ],
-        "PPM Equalpost": [
-          2,
-          3,
-          2
-        ],
-        "PPM Underpost": []
+      {
+        "Session": "Fall 2021",
+        "Week": 3,
+        "Self": {
+          "Skill Level": 6,
+          "Points": 0,
+          "Games Won": 2
+        },
+        "Opponent": {
+          "Skill Level": 4,
+          "Points": 2,
+          "Games Won": 3
+        }
+      },
+      {
+        "Session": "Fall 2021",
+        "Week": 5,
+        "Self": {
+          "Skill Level": 6,
+          "Points": 2,
+          "Games Won": 5
+        },
+        "Opponent": {
+          "Skill Level": 6,
+          "Points": 0,
+          "Games Won": 1
+        }
       }
-    }
+    ]
   },
   {
     "Player Name": "Rob Freimuth",
     "Skill Level": 3,
-    "Career Win Chance": 0.4961,
-    "Career Games Played": 129,
-    "Session": {
-      "Spring 2021": {
-        "PPM": [
-          1
-        ],
-        "PPM Overpost": [
-          0
-        ],
-        "PPM Equalpost": [
-          3,
-          2,
-          0,
-          0,
-          1
-        ],
-        "PPM Underpost": [
-          0,
-          2
-        ]
+    "Career Wins": 64,
+    "Career Games": 129,
+    "Games": [
+      {
+        "Session": "Fall 2021",
+        "Week": 1,
+        "Self": {
+          "Skill Level": 3,
+          "Points": 1,
+          "Games Won": 1
+        },
+        "Opponent": {
+          "Skill Level": 3,
+          "Points": 2,
+          "Games Won": 2
+        }
       },
-      "Summer 2021": {
-        "PPM": [
-          1.17
-        ],
-        "PPM Overpost": [],
-        "PPM Equalpost": [
-          1,
-          1,
-          3,
-          2,
-          0
-        ],
-        "PPM Underpost": [
-          0
-        ]
+      {
+        "Session": "Fall 2021",
+        "Week": 2,
+        "Self": {
+          "Skill Level": 3,
+          "Points": 0,
+          "Games Won": 0
+        },
+        "Opponent": {
+          "Skill Level": 3,
+          "Points": 3,
+          "Games Won": 2
+        }
       },
-      "Fall 2021": {
-        "PPM": [
-          1,
-          0,
-          2,
-          0
-        ],
-        "PPM Overpost": [],
-        "PPM Equalpost": [
-          1,
-          0,
-          2
-        ],
-        "PPM Underpost": [
-          0
-        ]
+      {
+        "Session": "Fall 2021",
+        "Week": 4,
+        "Self": {
+          "Skill Level": 3,
+          "Points": 2,
+          "Games Won": 2
+        },
+        "Opponent": {
+          "Skill Level": 3,
+          "Points": 1,
+          "Games Won": 1
+        }
+      },
+      {
+        "Session": "Fall 2021",
+        "Week": 6,
+        "Self": {
+          "Skill Level": 3,
+          "Points": 0,
+          "Games Won": 0
+        },
+        "Opponent": {
+          "Skill Level": 4,
+          "Points": 3,
+          "Games Won": 3
+        }
       }
-    }
+    ]
   },
   {
     "Player Name": "Scott Berry",
     "Skill Level": 4,
-    "Career Win Chance": 0.5469,
-    "Career Games Played": 64,
-    "Session": {
-      "Spring 2021": {
-        "PPM": [
-          1.67
-        ],
-        "PPM Overpost": [
-          3,
-          3
-        ],
-        "PPM Equalpost": [
-          2,
-          2,
-          0,
-          2,
-          2,
-          1,
-          0,
-          2
-        ],
-        "PPM Underpost": []
+    "Career Wins": 35,
+    "Career Games": 64,
+    "Games": [
+      {
+        "Session": "Fall 2021",
+        "Week": 2,
+        "Self": {
+          "Skill Level": 4,
+          "Points": 2,
+          "Games Won": 3
+        },
+        "Opponent": {
+          "Skill Level": 4,
+          "Points": 1,
+          "Games Won": 2
+        }
       },
-      "Summer 2021": {
-        "PPM": [
-          1
-        ],
-        "PPM Overpost": [
-          0
-        ],
-        "PPM Equalpost": [
-          0,
-          0,
-          2,
-          0,
-          3
-        ],
-        "PPM Underpost": [
-          1
-        ]
+      {
+        "Session": "Fall 2021",
+        "Week": 4,
+        "Self": {
+          "Skill Level": 4,
+          "Points": 2,
+          "Games Won": 3
+        },
+        "Opponent": {
+          "Skill Level": 4,
+          "Points": 1,
+          "Games Won": 2
+        }
       },
-      "Fall 2021": {
-        "PPM": [
-          2,
-          2,
-          2
-        ],
-        "PPM Overpost": [],
-        "PPM Equalpost": [
-          2,
-          2,
-          2
-        ],
-        "PPM Underpost": []
+      {
+        "Session": "Fall 2021",
+        "Week": 6,
+        "Self": {
+          "Skill Level": 4,
+          "Points": 2,
+          "Games Won": 3
+        },
+        "Opponent": {
+          "Skill Level": 4,
+          "Points": 0,
+          "Games Won": 1
+        }
       }
-    }
+    ]
   },
   {
     "Player Name": "Brad Oldershaw",
     "Skill Level": 3,
-    "Career Win Chance": 0.25,
-    "Career Games Played": 4,
-    "Session": {
-      "Spring 2021": {
-        "PPM": [],
-        "PPM Overpost": [],
-        "PPM Equalpost": [],
-        "PPM Underpost": []
+    "Career Wins": 1,
+    "Career Games": 4,
+    "Games": [
+      {
+        "Session": "Fall 2021",
+        "Week": 3,
+        "Self": {
+          "Skill Level": 3,
+          "Points": 0,
+          "Games Won": 0
+        },
+        "Opponent": {
+          "Skill Level": 3,
+          "Points": 3,
+          "Games Won": 2
+        }
       },
-      "Summer 2021": {
-        "PPM": [],
-        "PPM Overpost": [],
-        "PPM Equalpost": [],
-        "PPM Underpost": []
+      {
+        "Session": "Fall 2021",
+        "Week": 5,
+        "Self": {
+          "Skill Level": 3,
+          "Points": 0,
+          "Games Won": 1
+        },
+        "Opponent": {
+          "Skill Level": 2,
+          "Points": 2,
+          "Games Won": 2
+        }
       },
-      "Fall 2021": {
-        "PPM": [
-          0,
-          0,
-          3,
-          1
-        ],
-        "PPM Overpost": [
-          0
-        ],
-        "PPM Equalpost": [
-          0,
-          3
-        ],
-        "PPM Underpost": [
-          1
-        ]
+      {
+        "Session": "Fall 2021",
+        "Week": 6,
+        "Self": {
+          "Skill Level": 3,
+          "Points": 3,
+          "Games Won": 2
+        },
+        "Opponent": {
+          "Skill Level": 3,
+          "Points": 0,
+          "Games Won": 0
+        }
+      },
+      {
+        "Session": "Fall 2021",
+        "Week": 7,
+        "Self": {
+          "Skill Level": 3,
+          "Points": 1,
+          "Games Won": 1
+        },
+        "Opponent": {
+          "Skill Level": 7,
+          "Points": 2,
+          "Games Won": 6
+        }
       }
-    }
+    ]
   }
 ]
