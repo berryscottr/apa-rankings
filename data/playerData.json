@@ -1,9 +1,9 @@
 [
   {
     "Player Name": "Wes Young",
-    "Skill Level": 3,
-    "Career Win Chance": 0.4719,
-    "Career Games Played": 89,
+    "Skill Level": 4,
+    "Career Win Chance": 0.4778,
+    "Career Games Played": 90,
     "Session": {
       "Spring 2021": {
         "PPM": [
@@ -53,11 +53,13 @@
           0,
           3,
           3,
+          3,
           3
         ],
         "PPM Overpost": [],
         "PPM Equalpost": [
           0,
+          3,
           3,
           3,
           3
@@ -69,8 +71,8 @@
   {
     "Player Name": "Brian Knapp",
     "Skill Level": 6,
-    "Career Win Chance": 0.4099,
-    "Career Games Played": 61,
+    "Career Win Chance": 0.4128,
+    "Career Games Played": 63,
     "Session": {
       "Spring 2021": {
         "PPM": [
@@ -116,24 +118,29 @@
         "PPM": [
           3,
           2,
-          0
+          0,
+          0,
+          2
         ],
         "PPM Overpost": [
-          3
+          3,
+          2
         ],
         "PPM Equalpost": [
           2,
           0
         ],
-        "PPM Underpost": []
+        "PPM Underpost": [
+          0
+        ]
       }
     }
   },
   {
     "Player Name": "John Wigart",
     "Skill Level": 4,
-    "Career Win Chance": 0.5484,
-    "Career Games Played": 62,
+    "Career Win Chance": 0.5397,
+    "Career Games Played": 63,
     "Session": {
       "Spring 2021": {
         "PPM": [
@@ -180,9 +187,12 @@
           3,
           0,
           0,
-          0
+          0,
+          1
         ],
-        "PPM Overpost": [],
+        "PPM Overpost": [
+          1
+        ],
         "PPM Equalpost": [
           3,
           0,
@@ -196,8 +206,8 @@
   {
     "Player Name": "Brian Lillard",
     "Skill Level": 5,
-    "Career Win Chance": 0.5667,
-    "Career Games Played": 60,
+    "Career Win Chance": 0.5807,
+    "Career Games Played": 62,
     "Session": {
       "Spring 2021": {
         "PPM": [
@@ -242,13 +252,17 @@
         "PPM": [
           2,
           0,
-          0
+          0,
+          2,
+          2
         ],
         "PPM Overpost": [
           0
         ],
         "PPM Equalpost": [
-          0
+          0,
+          2,
+          2
         ],
         "PPM Underpost": [
           2
@@ -326,8 +340,8 @@
   {
     "Player Name": "Rob Freimuth",
     "Skill Level": 3,
-    "Career Win Chance": 0.5,
-    "Career Games Played": 128,
+    "Career Win Chance": 0.4961,
+    "Career Games Played": 129,
     "Session": {
       "Spring 2021": {
         "PPM": [
@@ -368,7 +382,8 @@
         "PPM": [
           1,
           0,
-          2
+          2,
+          0
         ],
         "PPM Overpost": [],
         "PPM Equalpost": [
@@ -376,15 +391,17 @@
           0,
           2
         ],
-        "PPM Underpost": []
+        "PPM Underpost": [
+          0
+        ]
       }
     }
   },
   {
     "Player Name": "Scott Berry",
     "Skill Level": 4,
-    "Career Win Chance": 0.5397,
-    "Career Games Played": 63,
+    "Career Win Chance": 0.5469,
+    "Career Games Played": 64,
     "Session": {
       "Spring 2021": {
         "PPM": [
@@ -427,10 +444,12 @@
       "Fall 2021": {
         "PPM": [
           2,
+          2,
           2
         ],
         "PPM Overpost": [],
         "PPM Equalpost": [
+          2,
           2,
           2
         ],
@@ -441,8 +460,8 @@
   {
     "Player Name": "Brad Oldershaw",
     "Skill Level": 3,
-    "Career Win Chance": 0.0,
-    "Career Games Played": 2,
+    "Career Win Chance": 0.25,
+    "Career Games Played": 4,
     "Session": {
       "Spring 2021": {
         "PPM": [],
@@ -459,15 +478,20 @@
       "Fall 2021": {
         "PPM": [
           0,
-          0
+          0,
+          3,
+          1
         ],
         "PPM Overpost": [
           0
         ],
         "PPM Equalpost": [
-          0
+          0,
+          3
         ],
-        "PPM Underpost": []
+        "PPM Underpost": [
+          1
+        ]
       }
     }
   }
