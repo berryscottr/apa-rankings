@@ -152,6 +152,20 @@
           "Points": 0,
           "Games Won": 1
         }
+      },
+      {
+        "Session": "Fall 2021",
+        "Week": 8,
+        "Self": {
+          "Skill Level": 6,
+          "Points": 0,
+          "Games Won": 1
+        },
+        "Opponent": {
+          "Skill Level": 7,
+          "Points": 2,
+          "Games Won": 5
+        }
       }
     ]
   },
@@ -229,6 +243,20 @@
           "Skill Level": 3,
           "Points": 2,
           "Games Won": 2
+        }
+      },
+      {
+        "Session": "Fall 2021",
+        "Week": 8,
+        "Self": {
+          "Skill Level": 4,
+          "Points": 2,
+          "Games Won": 3
+        },
+        "Opponent": {
+          "Skill Level": 5,
+          "Points": 1,
+          "Games Won": 3
         }
       }
     ]
@@ -372,6 +400,20 @@
           "Points": 0,
           "Games Won": 1
         }
+      },
+      {
+        "Session": "Fall 2021",
+        "Week": 8,
+        "Self": {
+          "Skill Level": 6,
+          "Points": 0,
+          "Games Won": 3
+        },
+        "Opponent": {
+          "Skill Level": 5,
+          "Points": 2,
+          "Games Won": 4
+        }
       }
     ]
   },
@@ -436,6 +478,20 @@
           "Points": 3,
           "Games Won": 3
         }
+      },
+      {
+        "Session": "Fall 2021",
+        "Week": 8,
+        "Self": {
+          "Skill Level": 3,
+          "Points": 3,
+          "Games Won": 2
+        },
+        "Opponent": {
+          "Skill Level": 3,
+          "Points": 0,
+          "Games Won": 0
+        }
       }
     ]
   },
@@ -485,6 +541,20 @@
           "Skill Level": 4,
           "Points": 0,
           "Games Won": 1
+        }
+      },
+      {
+        "Session": "Fall 2021",
+        "Week": 8,
+        "Self": {
+          "Skill Level": 4,
+          "Points": 3,
+          "Games Won": 3
+        },
+        "Opponent": {
+          "Skill Level": 3,
+          "Points": 0,
+          "Games Won": 0
         }
       }
     ]
