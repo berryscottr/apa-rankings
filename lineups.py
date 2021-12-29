@@ -21,13 +21,14 @@ def calc_lineups(players, num, max_total):
 
 
 def main():
-    skill_levels = [2, 3, 4, 5, 5, 5, 5, 6]
+    skill_levels = [3, 3, 4, 5, 5, 5, 5, 6]
     num_players = 5
-    max_skill_level_totals = [23, 22, 21]
+    max_skill_level_totals = range(23, 0, -1)
     for skill_level in max_skill_level_totals:
-        print("Combinations of", skill_level)
         lineups = calc_lineups(skill_levels, num_players, skill_level)
-        print(lineups)
+        if len(lineups) > 0:
+            print("Combinations of", skill_level)
+            print(lineups)
 
 
 if __name__ == '__main__':
