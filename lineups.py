@@ -28,7 +28,8 @@ def main():
         lineups = calc_lineups(skill_levels, num_players, skill_level)
         if len(lineups) > 0:
             print("Combinations of", skill_level)
-            print(lineups)
+            for lineup in lineups:
+                print(lineup)
 
 
 if __name__ == '__main__':
