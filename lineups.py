@@ -21,7 +21,7 @@ def calc_lineups(players, max_total):
 
 
 def main():
-    skill_levels = [3, 3, 4, 5, 5, 5, 5, 6]
+    skill_levels = [3, 5, 5, 3, 3, 3, 3, 6]
     max_skill_level_totals = range(23, 0, -1)
     for skill_total in max_skill_level_totals:
         lineups = calc_lineups(skill_levels, skill_total)
