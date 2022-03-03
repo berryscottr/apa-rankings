@@ -69,7 +69,7 @@ def get_sl_matchup_stats(df, games2win):
             except TypeError:
                 slmatches.loc[p1skill, p2skill] = matchup_data.average
     for sl in slrange:
-        plt.plot(np.array(slrange), np.array(slmatches.values[sl-2]))
+        plt.plot(np.array(slrange), np.array([float(str(x).replace("X", "", 1)) for x in slmatches.values[sl-2]]))
         title = 'Matchups SL {}'.format(sl)
         imgtitle = "data/slmatchups/slmatchups{}.jpg".format(sl)
         plt.title(title)
