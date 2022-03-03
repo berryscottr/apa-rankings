@@ -62,19 +62,21 @@ def get_sl_matchup_stats(df, games2win):
             matchup_data.getaverage()
             if p1skill == p2skill:
                 matchup_data.average /= 2
+            if matchup_data.games < 2:
+                matchup_data.average = "X{}".format(round(matchup_data.average, 2))
             try:
                 slmatches.loc[p1skill, p2skill] = round(matchup_data.average, 2)
             except TypeError:
                 slmatches.loc[p1skill, p2skill] = matchup_data.average
-    # for sl in slrange:
-    #     plt.plot(np.array(slrange), np.array(slmatches.values[sl-2]))
-    #     title = 'Matchups SL {}'.format(sl)
-    #     imgtitle = "data/slmatchups/slmatchups{}.jpg".format(sl)
-    #     plt.title(title)
-    #     plt.xlabel('Opponent SL')
-    #     plt.ylabel('Average Points')
-    #     plt.savefig(imgtitle)
-    #     plt.show()
+    for sl in slrange:
+        plt.plot(np.array(slrange), np.array(slmatches.values[sl-2]))
+        title = 'Matchups SL {}'.format(sl)
+        imgtitle = "data/slmatchups/slmatchups{}.jpg".format(sl)
+        plt.title(title)
+        plt.xlabel('Opponent SL')
+        plt.ylabel('Average Points')
+        plt.savefig(imgtitle)
+        plt.show()
     slmatches.to_excel(r'data/slmatchups/SLMatchupAverages.xlsx', index=True, header=True)
     print(slmatches)
 
