@@ -62,7 +62,7 @@ def get_sl_matchup_stats(df, games2win):
             matchup_data.getaverage()
             if p1skill == p2skill:
                 matchup_data.average /= 2
-            if matchup_data.games < 2:
+            if matchup_data.games < 6:
                 matchup_data.average = "X{}".format(round(matchup_data.average, 2))
             try:
                 slmatches.loc[p1skill, p2skill] = round(matchup_data.average, 2)
